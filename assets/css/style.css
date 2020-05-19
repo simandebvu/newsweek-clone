@@ -4,6 +4,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 :root {
@@ -11,19 +12,56 @@ body {
 }
 /* NAVIGATION */
 
+.navbar,
+.nav-wrapper button {
+  padding: 0;
+}
 .nav-wrapper {
   background-color: var(--main-page-color);
 }
+
+.btn-login{
+    background: none;
+    color: #fff;
+}
+
+.btn-subscribe{
+    background: #fff;
+    color: var(--main-page-color);
+    border-radius: 0px;
+}
+
 .navbar-brand img {
   height: 50px;
 }
 
-/* PAGE ITEMS */
-.col-title {
-  color: rgba(3, 3, 3, 0.4);
-  font-size: 16px;
-  padding: 25px 0;
+/* HELPER CLASSES */
+.bold-text{
+    font-weight: bold;
 }
+
+p{
+    padding-top: 10px;
+}
+
+article{
+    padding-bottom: 20px;
+}
+
+.col-title {
+    color: rgba(3, 3, 3, 0.4);
+    font-size: 16px;
+    padding: 10px 0;
+  }
+/* PAGE ITEMS */
+
+.item-separator-large{
+    background-color: #F4F5F7;
+    height: 19px;
+    width: 100%;
+}
+
+
 .mid-page-link {
   text-align: center;
   color: #000;
@@ -40,22 +78,22 @@ body {
   margin-right: 10px;
 }
 
-.subs-wrapper{
-    background-color: #f4f5f6;
-    padding: 24px 20px 20px;
-    margin: 15px;
+.subs-wrapper {
+  background-color: #f4f5f6;
+  padding: 24px 20px 20px;
+  margin: 15px;
 }
 
-.subscribe-title{
-    font: bold 16px/16px "Roboto Condensed",sans-serif;
-    text-transform: uppercase;
-    padding-bottom: 15px;
-    color: var(--main-page-color);
+.subscribe-title {
+  font: bold 16px/16px "Roboto Condensed", sans-serif;
+  text-transform: uppercase;
+  padding-bottom: 15px;
+  color: var(--main-page-color);
 }
 
 /* CONTENT ITEMS */
 .feature-summary {
-    font-weight: bold;
+  font-weight: bold;
 }
 .story-header {
   position: relative;
@@ -72,9 +110,9 @@ body {
 }
 
 .hr-grey {
-    background-color: #333333;
-    margin: 0 10px;
-  }
+  background-color: #333333;
+  margin: 0 10px;
+}
 .magazine-header {
   display: flex;
   justify-content: center;
@@ -83,6 +121,9 @@ body {
 }
 .debate-side img {
   margin-right: 10px;
+  border-radius: 100px;
+  height: 63px;
+  max-width: 63px;
 }
 
 .opinion-item {
@@ -100,28 +141,31 @@ body {
   align-items: center;
 }
 
-.magazine-images{
-    position: relative;
-    text-align: center;
-    height: 160px;
+.magazine-images {
+  position: relative;
+  text-align: center;
+  height: 160px;
 }
 
-.previous-edition{
-    z-index: 3;
+.previous-edition {
+  z-index: 3;
 }
 
-.current-edition{
-    position: absolute;
-    top: 15px;
-    left: 110px;
+.current-edition {
+  position: absolute;
+  top: 15px;
+  left: 110px;
 }
-.magazine-images img{
-    height: 228px;
-    width: 170px;
+.magazine-images img {
+  height: 228px;
+  width: 170px;
 }
 
-.magazine-info{
-    font-weight: bold;
+.magazine-info {
+  font-weight: bold;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 /* CATEGORY ITEMS */
 
@@ -154,4 +198,12 @@ body {
   padding: 5px;
   bottom: 0;
   font-weight: bold;
+}
+
+@media screen and (min-width: 992px) {
+    .navbar-brand img {
+        height: 60px;
+        width: 245px;
+        margin: 10px auto 0;
+      }
 }

@@ -7,14 +7,20 @@
    <title>Newsweek - Clone</title>
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="./assets/css/reset.css" />
    <link rel="stylesheet" href="./assets/css/style.css" />
 </head>
 
 <body>
    <!-- Navigation -->
-   <nav class="navbar navbar-light navbar-expand-md bg-light sticky-top">
+   <nav class="navbar navbar-expand-md navbar-dark sticky-top">
       <div class="container-fluid nav-wrapper">
          <a href="#" class="navbar-brand"><img src="./assets/img/newsweek-logo-trans.png" alt="Newsweek Logo" /></a>
+         <span class="login-options">
+            <button type="button" class="btn ml-auto mr-1 btn-login">LOGIN</button>
+            <button type="button" class="btn btn-light btn-subscribe">SUBSCRIBE</button>
+         </span>
          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav"
             aria-expanded="false">
             <span class="navbar-toggler-icon"></span>
@@ -37,48 +43,56 @@
          </div>
       </div>
    </nav>
+   </div>
+
+
    <div class="main container-fluid">
       <div class="row padding">
-         <div class="col-xs-12 col-sm-6 col-md-4">
-            <!-- Top Story -->
+
+         <!-- Top Story -->
+         <article class="col-xs-12 col-sm-6 col-md-4">
             <div class="col-title">TOP STORY</div>
-            <div class="card">
-               <img class="card-img-top" src="https://picsum.photos/200/100" alt="top-story"></img>
-               <div class="card-body">
-                  <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam, quia.</h3>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo recusandae incidunt corrupti omnis,
-                  deserunt fuga!
-               </div>
+            <div class="story-header">
+               <div class="article-category bold-text">WORLD</div>
+               <img src="./assets/img/russia-covid-china.webp" class="article-image" alt="featured-story"></img>
             </div>
-         </div>
+            <div class="top-story-info">
+               <h3 class="bold-text">Russia Opposes Any 'Mock' Coronavirus Trial of WHO, China: Senate Speaker</h3>
+               <p> Valentina Matviyenko praised both the World Health Organization and China for their
+                  work in trying to slow the worldwide spread of the virus.</p>
+            </div>
+         </article>
+         <!-- Top Story End -->
+
+         <div class="col-xs-12 item-separator-large"></div>
+
+         <!-- Featured Stories -->
          <div class="col-xs-12 col-sm-6 col-md-4">
-            <!-- Featured Stories -->
             <div class="col-title">FEATURED STORIES</div>
             <div class="content">
                <article>
                   <div class="wrap"></div>
                   <div class="story-header">
                      <div class="article-category">LATEST</div>
-                     <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story"></img>
+                     <img src="./assets/img/gary-arbery.webp" class="article-image" alt="featured-story"></img>
                   </div>
-                  <h3>Lorem ipsum dolor sit.</h3>
+                  <h3 class="bold-text">In Arbery Shooting, George Zimmerman-Style Defense May Resonate With Jurors</h3>
                   <div class="summary">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, incidunt laboriosam ab
-                     mollitia nemo quis!
+                     The killers of Georgia jogger Ahmaud Arbery may claim self-defense. An earlier case-—and a local prosecutor's memo—may provide defense fodder.
                   </div>
                </article>
             </div>
          </div>
+         <!-- Featured Stories End -->
+
+         <!-- The Debate -->
          <div class="col-xs-12 col-sm-6 col-md-4">
-            <!-- The Debate -->
-            <div class="card">
-               <div class="card-body">
                   <div class="col-title">
                      <h6 class="card-subtitle">THE DEBATE</h6>
                   </div>
                   <hr class="hr-red">
                   <div class="debate-side">
-                     <img src="https://picsum.photos/63/63" alt="debater-image">
+                     <img src="./assets/img/caroline-glick.png" alt="debater-image">
                      Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
                   </div>
                   <div class="debate-versus">VS</div>
@@ -87,8 +101,8 @@
                      Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
                   </div>
                   <hr class="hr-blue">
-               </div>
-            </div>
+            <!-- ......The Debate ends -->
+
             <!-- Opinion -->
             <div class="col-title">OPINION</div>
             <div class="card">
@@ -249,15 +263,28 @@
                      </div>
                      <div class="magazine-info">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis maxime iusto hic, nihil
+                        <br>
                         incidunt laborum facere tempora nemo possimus amet distinctio nam eius obcaecati consequatur
                         provident error reprehenderit magnam.
+                        <button>SUB</button>
                      </div>
                   </div>
                </div>
             </div>
             <!-- Newsletter -->
-            <div class="newsletter">
+            <div class="newsletter col-md-5 col-lg-4 flex-md fd-c">
+               <h3 class="subscribe-title">NEWSLETTER</h3>
 
+               <div class="card">
+                  <div class="card-body">
+                     <h5 class="card-title">The Starting 5</h5>
+                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                     <div class="form-group">
+                        <input type="email" class="form-control" aria-describedby="emailHelp" placeholder="Enter email">
+                     </div>
+                     <button type="button" class="btn btn-primary btn-lg btn-block">FREE SIGN UP ></button>
+                  </div>
+               </div>
             </div>
 
 
@@ -265,15 +292,6 @@
       </div>
       <!-- Footer -->
    </div>
-   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"></script>
-   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-      crossorigin="anonymous"></script>
-   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-      crossorigin="anonymous"></script>
 </body>
 
 </html>
