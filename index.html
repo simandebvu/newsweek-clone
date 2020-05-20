@@ -8,43 +8,58 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-   <link rel="stylesheet" href="./assets/css/reset.css" />
-   <link rel="stylesheet" href="./assets/css/style.css" />
+   <link rel="stylesheet" href="./assets/css/style.css">
+
 </head>
 
 <body>
    <!-- Navigation -->
-   <nav class="navbar navbar-expand-md navbar-dark sticky-top">
-      <div class="container-fluid nav-wrapper">
-         <a href="#" class="navbar-brand"><img src="./assets/img/newsweek-logo-trans.png" alt="Newsweek Logo" /></a>
-         <span class="login-options">
-            <button type="button" class="btn ml-auto mr-1 btn-login">LOGIN</button>
-            <button type="button" class="btn btn-light btn-subscribe">SUBSCRIBE</button>
-         </span>
-         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav"
-            aria-expanded="false">
-            <span class="navbar-toggler-icon"></span>
-         </button>
-         <div class="collapse navbar-collapse" id="mainNav">
-            <ul class="navbar-nav ml-auto">
-               <li class="nav-item">
-                  <a href="#" class="nav-link">Lorem, ipsum.</a>
-               </li>
-               <li class="nav-item">
-                  <a href="#" class="nav-link">Lorem, ipsum.</a>
-               </li>
-               <li class="nav-item">
-                  <a href="#" class="nav-link">Lorem, ipsum.</a>
-               </li>
-               <li class="nav-item">
-                  <a href="#" class="nav-link">Lorem, ipsum.</a>
-               </li>
-            </ul>
+   <nav class="navbar navbar-expand-lg py-3 navbar-dark px-0">
+      <div class="container-fluid nav-wrapper py-1">
+         <div class="d-none d-lg-block ">Wed, May 20, 2020</div>
+         <div class="">
+            <a href="#" class="navbar-brand"><img class="mx-auto d-block" src="./assets/img/news-logo.svg"
+                  alt="Newsweek Logo"></a>
+         </div>
+         <div class="d-flex">
+            <button class="btn nav-link d-inline nav-button login-button p-0">Log in</button>
+            <button class="btn nav-link d-inline nav-button sub-button p-0">Subscribe</button>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
          </div>
       </div>
+      </div>
    </nav>
-   </div>
 
+
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="collapse navbar-collapse" id="navbarNav">
+         <ul class="navbar-nav  d-flex justify-content-between w-100">
+            <li class="nav-item active">
+               <a class="nav-link" href="#">US </a>
+            </li>
+            <li class="nav-item active">
+               <a class="nav-link" href="#">WORLD </a>
+            </li>
+            <li class="nav-item active">
+               <a class="nav-link" href="#">BUSINESS </a>
+            </li>
+            <li class="nav-item active">
+               <a class="nav-link" href="#">TECH AND SCIENCE </a>
+            </li>
+            <li class="nav-item active">
+               <a class="nav-link" href="#">CULTURE </a>
+            </li>
+            <li class="nav-item active">
+               <a class="nav-link" href="#">NEWSGEEK </a>
+            </li>
+
+         </ul>
+      </div>
+   </nav>
 
    <div class="main container-fluid">
       <div class="row padding">
@@ -78,7 +93,8 @@
                   </div>
                   <h3 class="bold-text">In Arbery Shooting, George Zimmerman-Style Defense May Resonate With Jurors</h3>
                   <div class="summary">
-                     The killers of Georgia jogger Ahmaud Arbery may claim self-defense. An earlier case-—and a local prosecutor's memo—may provide defense fodder.
+                     The killers of Georgia jogger Ahmaud Arbery may claim self-defense. An earlier case-—and a local
+                     prosecutor's memo—may provide defense fodder.
                   </div>
                </article>
             </div>
@@ -87,20 +103,20 @@
 
          <!-- The Debate -->
          <div class="col-xs-12 col-sm-6 col-md-4">
-                  <div class="col-title">
-                     <h6 class="card-subtitle">THE DEBATE</h6>
-                  </div>
-                  <hr class="hr-red">
-                  <div class="debate-side">
-                     <img src="./assets/img/caroline-glick.png" alt="debater-image">
-                     Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
-                  </div>
-                  <div class="debate-versus">VS</div>
-                  <div class="debate-side">
-                     <img src="https://picsum.photos/63/63" alt="debater-image">
-                     Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
-                  </div>
-                  <hr class="hr-blue">
+            <div class="col-title">
+               <h6 class="card-subtitle">THE DEBATE</h6>
+            </div>
+            <hr class="hr-red">
+            <div class="debate-side">
+               <img src="./assets/img/caroline-glick.png" alt="debater-image">
+               Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+            </div>
+            <div class="debate-versus">VS</div>
+            <div class="debate-side">
+               <img src="https://picsum.photos/63/63" alt="debater-image">
+               Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+            </div>
+            <hr class="hr-blue">
             <!-- ......The Debate ends -->
 
             <!-- Opinion -->

@@ -11,16 +11,33 @@ body {
   --main-page-color: #f72210;
 }
 /* NAVIGATION */
-
-.navbar,
-.nav-wrapper button {
-  padding: 0;
-}
-.nav-wrapper {
+.navbar {
   background-color: var(--main-page-color);
 }
 
-.btn-login{
+.navbar-brand img {
+  height: 20px;
+  padding-left: 3px;
+}
+
+
+.nav-button{
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.login-button{
+  color: #fff;
+  text-decoration: none;
+  background-color: transparent;
+  margin-right: 2px;
+}
+.sub-button{
+  color: var(--main-page-color);
+  background-color: white;
+  border-radius: 0em;
+}
+/* .btn-login{
     background: none;
     color: #fff;
 }
@@ -29,11 +46,8 @@ body {
     background: #fff;
     color: var(--main-page-color);
     border-radius: 0px;
-}
+} */
 
-.navbar-brand img {
-  height: 50px;
-}
 
 /* HELPER CLASSES */
 .bold-text{
@@ -200,10 +214,8 @@ article{
   font-weight: bold;
 }
 
-@media screen and (min-width: 992px) {
-    .navbar-brand img {
-        height: 60px;
-        width: 245px;
-        margin: 10px auto 0;
-      }
+@media screen and (min-width: 992px){
+.navbar-brand img {
+    height: 60px;
+}
 }
