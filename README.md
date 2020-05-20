@@ -13,7 +13,7 @@ A replica of the news site Newsweek.com using the Bootstrap framework.
 
 ## Live Demo
 
-[Live Demo Link](#)
+[Live Demo Link](https://raw.githack.com/simandebvu/newsweek-clone/develop/index.html)
 
 
 ## Getting Started

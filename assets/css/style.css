@@ -1,8 +1,7 @@
 html,
 body {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
-
 
 :root {
   --main-page-color: #f72210;
@@ -17,19 +16,18 @@ body {
   padding-left: 3px;
 }
 
-
-.nav-button{
+.nav-button {
   font-size: 14px;
   text-transform: uppercase;
 }
 
-.login-button{
+.login-button {
   color: #fff;
   text-decoration: none;
   background-color: transparent;
   margin-right: 2px;
 }
-.sub-button{
+.sub-button {
   color: var(--main-page-color);
   background-color: white;
   border-radius: 0em;
@@ -45,33 +43,31 @@ body {
     border-radius: 0px;
 } */
 
-
 /* HELPER CLASSES */
-.bold-text{
-    font-weight: bold;
+.bold-text {
+  font-weight: bold;
 }
 
-p{
-    padding-top: 10px;
+p {
+  padding-top: 10px;
 }
 
-article{
-    padding-bottom: 20px;
+article {
+  padding-bottom: 20px;
 }
 
 .col-title {
-    color: rgba(3, 3, 3, 0.4);
-    font-size: 16px;
-    padding: 10px 0;
-  }
+  color: rgba(3, 3, 3, 0.4);
+  font-size: 16px;
+  padding: 10px 0;
+}
 /* PAGE ITEMS */
 
-.item-separator-large{
-    background-color: #F4F5F7;
-    height: 19px;
-    width: 100%;
+.item-separator-large {
+  background-color: #f4f5f7;
+  height: 19px;
+  width: 100%;
 }
-
 
 .mid-page-link {
   text-align: center;
@@ -102,6 +98,78 @@ article{
   color: var(--main-page-color);
 }
 
+.main-container {
+  position: relative;
+}
+
+.border-before::before {
+  content: "";
+  display: block;
+  height: 18px;
+  background-color: #f4f5f7;
+  border-top: 1px solid #e2e2e2;
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+}
+
+/* --------------> THE DEBATE -------------->*/
+
+.debate-side-1 {
+  border-top: 4px solid #f92859;
+  padding-top: 10px;
+  padding-bottom: 4px;
+}
+
+.rounded-image-small {
+  margin-right: 10px;
+  border-radius: 100px;
+  height: 63px;
+  max-width: 63px;
+}
+
+.debate-side-2 {
+  border-bottom: 4px solid #1c87fb;
+  padding-bottom: 12px;
+}
+
+.debate-versus::before {
+  content: "";
+  display: block;
+  background-color: #d9d9d9;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.debate-versus{
+  width: 32px;
+  height: 32px;
+  background-color: #000;
+  color: #d6d6d6;
+  border-radius: 50%;
+  font: bold 14px/32px "Roboto Condensed",sans-serif;
+  text-align: center;
+  margin: 6px auto;
+}
+
+.debate-versus::after {
+  content: "";
+  display: block;
+  background-color: #d9d9d9;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+/* --------------> END THE DEBATE --------------> */
+
+
+/* --------------> START THE OPINIONS --------------> */
+
+
+/* --------------> END THE OPINIONS --------------> */
+
 /* CONTENT ITEMS */
 .feature-summary {
   font-weight: bold;
@@ -110,14 +178,8 @@ article{
   position: relative;
 }
 
-.hr-blue {
-  background-color: blue;
-}
 .article-image {
   width: 100%;
-}
-.hr-red {
-  background-color: #f72210;
 }
 
 .hr-grey {
@@ -129,12 +191,6 @@ article{
   justify-content: center;
   font-weight: bold;
   padding: 25px 0;
-}
-.debate-side img {
-  margin-right: 10px;
-  border-radius: 100px;
-  height: 63px;
-  max-width: 63px;
 }
 
 .opinion-item {
@@ -211,8 +267,12 @@ article{
   font-weight: bold;
 }
 
-@media screen and (min-width: 992px){
-.navbar-brand img {
+@media screen and (min-width: 992px) {
+  .navbar-brand img {
     height: 60px;
-}
+  }
+
+  .featured-stories::before {
+    display: none;
+  }
 }
