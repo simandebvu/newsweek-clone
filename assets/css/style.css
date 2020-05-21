@@ -98,22 +98,6 @@ article {
   color: var(--main-page-color);
 }
 
-.main-container {
-  position: relative;
-}
-
-.border-before::before {
-  content: "";
-  display: block;
-  height: 18px;
-  background-color: #f4f5f7;
-  border-top: 1px solid #e2e2e2;
-  position: absolute;
-  top: -15px;
-  left: -15px;
-  right: -15px;
-}
-
 /* --------------> THE DEBATE -------------->*/
 
 .debate-side-1 {
@@ -170,6 +154,36 @@ article {
 
 /* --------------> END THE OPINIONS --------------> */
 
+
+/* --------------> EDITORS PICK --------------> */
+
+/* -------------->  US --------------> */
+.block-title{
+  border-top: 1px solid #d9d9d9;
+  color: #f72210;
+  padding-top: 25px;
+  font-size: 22px;
+  line-height: 22px;
+}
+/* --------------> END US --------------> */
+
+.hr-grey {
+  border: 1px solid #333333;
+  margin: 0 10px;
+}
+
+/* --------------> END EDITORS PICK --------------> */
+
+/* --------------> FOOTER --------------> */
+.footer-image{
+  width: 236px;
+  height: 36px;
+  margin-right: 15px;
+  margin-bottom: 12px;
+}
+
+/* --------------> END FOOTER --------------> */
+
 /* CONTENT ITEMS */
 .feature-summary {
   font-weight: bold;
@@ -182,15 +196,11 @@ article {
   width: 100%;
 }
 
-.hr-grey {
-  background-color: #333333;
-  margin: 0 10px;
-}
+
 .magazine-header {
   display: flex;
   justify-content: center;
   font-weight: bold;
-  padding: 25px 0;
 }
 
 .opinion-item {
