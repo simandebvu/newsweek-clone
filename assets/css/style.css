@@ -1,12 +1,12 @@
 html,
 body {
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
 }
-
 
 :root {
   --main-page-color: #f72210;
 }
+
 /* NAVIGATION */
 .navbar {
   background-color: var(--main-page-color);
@@ -17,61 +17,62 @@ body {
   padding-left: 3px;
 }
 
-
-.nav-button{
+.nav-button {
   font-size: 14px;
   text-transform: uppercase;
 }
 
-.login-button{
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.nav-item a {
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: bold;
+  font-family: "Roboto Condensed", sans-serif;
+  text-transform: capitalize;
+}
+
+.login-button {
   color: #fff;
   text-decoration: none;
   background-color: transparent;
   margin-right: 2px;
 }
-.sub-button{
+
+.sub-button {
   color: var(--main-page-color);
-  background-color: white;
-  border-radius: 0em;
+  background-color: #fff;
+  border-radius: 0;
 }
-/* .btn-login{
-    background: none;
-    color: #fff;
-}
-
-.btn-subscribe{
-    background: #fff;
-    color: var(--main-page-color);
-    border-radius: 0px;
-} */
-
 
 /* HELPER CLASSES */
-.bold-text{
-    font-weight: bold;
+.bold-text {
+  font-weight: bold;
 }
 
-p{
-    padding-top: 10px;
+p {
+  padding-top: 10px;
 }
 
-article{
-    padding-bottom: 20px;
+article {
+  padding-bottom: 20px;
 }
 
 .col-title {
-    color: rgba(3, 3, 3, 0.4);
-    font-size: 16px;
-    padding: 10px 0;
-  }
-/* PAGE ITEMS */
-
-.item-separator-large{
-    background-color: #F4F5F7;
-    height: 19px;
-    width: 100%;
+  color: rgba(3, 3, 3, 0.4);
+  font-size: 16px;
+  padding: 10px 0;
 }
 
+/* PAGE ITEMS */
+
+.item-separator-large {
+  background-color: #f4f5f7;
+  height: 19px;
+  width: 100%;
+}
 
 .mid-page-link {
   text-align: center;
@@ -84,7 +85,8 @@ article{
 .icon-n {
   width: 29px;
   height: 28px;
-  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain
+  background:
+    url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain
     no-repeat #f72210;
   margin-right: 10px;
 }
@@ -102,39 +104,108 @@ article{
   color: var(--main-page-color);
 }
 
-/* CONTENT ITEMS */
-.feature-summary {
-  font-weight: bold;
-}
-.story-header {
-  position: relative;
+/* --------------> THE DEBATE --------------> */
+
+.debate-side-1 {
+  border-top: 4px solid #f92859;
+  padding-top: 10px;
+  padding-bottom: 4px;
 }
 
-.hr-blue {
-  background-color: blue;
-}
-.article-image {
-  width: 100%;
-}
-.hr-red {
-  background-color: #f72210;
-}
-
-.hr-grey {
-  background-color: #333333;
-  margin: 0 10px;
-}
-.magazine-header {
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-  padding: 25px 0;
-}
-.debate-side img {
+.rounded-image-small {
   margin-right: 10px;
   border-radius: 100px;
   height: 63px;
   max-width: 63px;
+}
+
+.debate-side-2 {
+  border-bottom: 4px solid #1c87fb;
+  padding-bottom: 12px;
+}
+
+.debate-versus::before {
+  content: "";
+  display: block;
+  background-color: #d9d9d9;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+.debate-versus {
+  width: 32px;
+  height: 32px;
+  background-color: #000;
+  color: #d6d6d6;
+  border-radius: 50%;
+  font: bold 14px/32px "Roboto Condensed", sans-serif;
+  text-align: center;
+  margin: 6px auto;
+}
+
+.debate-versus::after {
+  content: "";
+  display: block;
+  background-color: #d9d9d9;
+  position: absolute;
+  left: 0;
+  right: 0;
+}
+
+/* --------------> END THE DEBATE --------------> */
+
+/* --------------> START THE OPINIONS --------------> */
+
+/* --------------> END THE OPINIONS --------------> */
+
+/* --------------> EDITORS PICK --------------> */
+
+/* -------------->  US --------------> */
+.block-title {
+  border-top: 1px solid #d9d9d9;
+  color: #f72210;
+  padding-top: 25px;
+  font-size: 22px;
+  line-height: 22px;
+}
+
+/* --------------> END US --------------> */
+
+.hr-grey {
+  border: 1px solid #333;
+  margin: 0 10px;
+}
+
+/* --------------> END EDITORS PICK --------------> */
+
+/* --------------> FOOTER --------------> */
+.footer-image {
+  width: 236px;
+  height: 36px;
+  margin-right: 15px;
+  margin-bottom: 12px;
+}
+
+/* --------------> END FOOTER --------------> */
+
+/* CONTENT ITEMS */
+.feature-summary {
+  font-weight: bold;
+}
+
+.story-header {
+  position: relative;
+}
+
+.article-image {
+  width: 100%;
+}
+
+.magazine-header {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
 }
 
 .opinion-item {
@@ -142,9 +213,11 @@ article{
   align-items: center;
   padding: 5px;
 }
+
 .opinion-item img {
   margin-right: 5px;
 }
+
 .debate-side {
   padding-top: 10px;
   padding-bottom: 4px;
@@ -167,6 +240,7 @@ article{
   top: 15px;
   left: 110px;
 }
+
 .magazine-images img {
   height: 228px;
   width: 170px;
@@ -178,14 +252,28 @@ article{
   display: flex;
   flex-direction: column;
 }
+
+/* IN THE MAGAZINE */
+.mag-cat {
+  padding: 0 7px;
+  background-color: var(--main-page-color);
+  color: white;
+  margin-right: 7px;
+}
+
+.cat {
+  color: var(--main-page-color);
+}
+
 /* CATEGORY ITEMS */
 
 .article-category {
   color: var(--main-page-color);
   background-color: rgba(255, 255, 255, 0.9);
   padding: 5px;
+  font-size: 12px;
   position: absolute;
-  bottom: 0;
+  bottom: -10px;
 }
 
 .magazine-issue-date {
@@ -196,6 +284,7 @@ article{
   bottom: 0;
   font-weight: bold;
 }
+
 .mag-category {
   color: #000;
   background-color: var(--main-page-color);
@@ -211,8 +300,49 @@ article{
   font-weight: bold;
 }
 
-@media screen and (min-width: 992px){
-.navbar-brand img {
-    height: 60px;
+.fab,
+.footer-links a {
+  color: #000;
 }
+
+@media (min-width: 768px) {
+  .custom-navbar-button {
+    margin-right: 0;
+  }
+
+  .custom-navbar-button button {
+    font-size: 1rem;
+  }
+
+  .current-edition {
+    position: absolute;
+    top: 15px;
+    left: 355px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .navbar-brand img {
+    height: 60px;
+  }
+
+  .featured-stories::before {
+    display: none;
+  }
+
+  .current-edition {
+    position: absolute;
+    top: 20px;
+    left: 355px;
+  }
+
+  .main-view {
+    max-height: 1000px;
+    overflow: scroll;
+    -ms-overflow-style: none;
+  }
+
+  .main-view::-webkit-scrollbar {
+    display: none;
+  }
 }

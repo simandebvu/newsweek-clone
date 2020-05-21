@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
    <meta charset="UTF-8" />
@@ -8,6 +8,8 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+   <!-- Google Icons -->
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
@@ -16,14 +18,14 @@
    <!-- Navigation -->
    <nav class="navbar navbar-expand-lg py-3 navbar-dark px-0 sticky-top">
       <div class="container-fluid nav-wrapper py-1">
-         <div class="d-none d-lg-block ">Wed, May 20, 2020</div>
+         <div class="d-none d-lg-block text-white">Wed, May 20, 2020</div>
          <div class="">
             <a href="#" class="navbar-brand"><img class="mx-auto d-block" src="./assets/img/news-logo.svg"
                   alt="Newsweek Logo"></a>
          </div>
          <div class="d-flex">
-            <button class="btn nav-link d-inline nav-button login-button p-0">Log in</button>
-            <button class="btn nav-link d-inline nav-button sub-button p-0">Subscribe</button>
+            <button class="btn nav-link d-inline nav-button login-button p-0 px-md-3">Log in</button>
+            <button class="btn nav-link d-inline nav-button sub-button p-0 px-md-3">Subscribe</button>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
@@ -34,7 +36,7 @@
 
    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="collapse navbar-collapse" id="navbarNav">
-         <ul class="navbar-nav  d-flex justify-content-between w-100">
+         <ul class="navbar-nav d-flex justify-content-between w-100 align-items-baseline">
             <li class="nav-item active">
                <a class="nav-link" href="#">US </a>
             </li>
@@ -53,6 +55,23 @@
             <li class="nav-item active">
                <a class="nav-link" href="#">NEWSGEEK </a>
             </li>
+            <li class="nav-item active">
+               <a class="nav-link" href="#">SPORTS </a>
+            </li>
+            <li class="nav-item active">
+               <a class="nav-link" href="#">HEALTH </a>
+            </li>
+            <li class="nav-item active">
+               <a class="nav-link" href="#">THE DEBATE </a>
+            </li>
+            <li class="nav-item active">
+               <a class="nav-link" href="#">VANTAGE </a>
+            </li>
+            <li class="nav-item active">
+               <a class="nav-link" href="#">WEATHER </a>
+            </li>
+            <li class="d-flex flex-row align-items-center p-3"><input type="text" placeholder="Search"><span
+                  class="material-icons">search</span></li>
 
          </ul>
       </div>
@@ -60,249 +79,852 @@
 
    <!-- Navigation End -->
 
-   <div class="row container-fluid">
-
-      <!-- Top Story -->
-      <article class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
-         <div class="col-title">TOP STORY</div>
-         <div class="story-header">
-            <div class="article-category bold-text">WORLD</div>
-            <img src="./assets/img/russia-covid-china.webp" class="article-image" alt="featured-story"/>
-         </div>
-         <div class="top-story-info">
-            <h3 class="bold-text">Russia Opposes Any 'Mock' Coronavirus Trial of WHO, China: Senate Speaker</h3>
-            <p> Valentina Matviyenko praised both the World Health Organization and China for their
-               work in trying to slow the worldwide spread of the virus.</p>
-         </div>
-      </article>
-      <!-- Top Story End -->
-
-
-      <!-- Featured Stories -->
-      <div class="col-xs-12 col-sm-6 col-md-4">
-         <div class="col-title">FEATURED STORIES</div>
-         <div class="content">
-            <article>
-               <div class="wrap"></div>
+   <div class="container-fluid mx-0">
+      <div class="row">
+         <!-- Top Story -->
+         <div class="col-sm-12 col-md-7 col-lg-6 order-sm-0 order-md-1 order-lg-1 main-view">
+            <div class="col-title">TOP STORY</div>
+            <div class="top-story">
                <div class="story-header">
-                  <div class="article-category">LATEST</div>
-                  <img src="./assets/img/gary-arbery.webp" class="article-image" alt="featured-story"/>
+                  <h6 class="article-category bold-text">WORLD</h6>
+                  <img src="./assets/img/russia-covid-china.webp" class="article-image" alt="featured-story" />
                </div>
-               <h3 class="bold-text">In Arbery Shooting, George Zimmerman-Style Defense May Resonate With Jurors</h3>
-               <div class="summary">
-                  The killers of Georgia jogger Ahmaud Arbery may claim self-defense. An earlier case-—and a local
-                  prosecutor's memo—may provide defense fodder.
-               </div>
-            </article>
-         </div>
-      </div>
-      <!-- Featured Stories End -->
-
-      <!-- The Debate -->
-      <div class="col-xs-12 col-sm-6 col-md-4">
-         <div class="col-title">
-            <h6 class="card-subtitle">THE DEBATE</h6>
-         </div>
-         <hr class="hr-red">
-         <div class="debate-side">
-            <img src="./assets/img/caroline-glick.png" alt="debater-image">
-            Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
-         </div>
-         <div class="debate-versus">VS</div>
-         <div class="debate-side">
-            <img src="https://picsum.photos/63/63" alt="debater-image">
-            Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
-         </div>
-         <hr class="hr-blue">
-         <!-- ......The Debate ends -->
-
-         <!-- Opinion -->
-         <div class="col-title">OPINION</div>
-         <div class="card">
-            <div class="opinion-item">
-               <img src="https://picsum.photos/100/100" alt="debater-image">
-               Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
-            </div>
-            <div class="opinion-item">
-               <img src="https://picsum.photos/100/100" alt="debater-image">
-               Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
-            </div>
-            <div class="opinion-item">
-               <img src="https://picsum.photos/100/100" alt="debater-image">
-               Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
-            </div>
-         </div>
-         <!-- More Stories -->
-         <div class="col-title">MORE STORIES</div>
-         <div class="card">
-            <div class="opinion-item">
-               <img src="https://picsum.photos/100/100" alt="debater-image">
-               Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
-            </div>
-            <div class="opinion-item">
-               <img src="https://picsum.photos/100/100" alt="debater-image">
-               Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
-            </div>
-         </div>
-         <!-- Heroes of the pandemic -->
-         <div class="col-title">HEROES OF THE PANDEMIC</div>
-         <div class="card">
-            <div class="story-item">
-               <div class="story-header">
-                  <div class="article-category">PANDEMIC HEROES</div>
-                  <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story"/>
-               </div>
-               <div class="story-summary">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur officia sequi.
+               <div class="top-story-info">
+                  <h3 class="bold-text">Russia Opposes Any 'Mock' Coronavirus Trial of WHO, China: Senate Speaker</h3>
+                  <p> Valentina Matviyenko praised both the World Health Organization and China for their
+                     work in trying to slow the worldwide spread of the virus.</p>
                </div>
             </div>
-            <div class="story-item">
-               <div class="story-header">
-                  <div class="article-category">PANDEMIC HEROES</div>
-                  <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story"/>
-               </div>
-               <div class="story-summary">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur officia sequi.
-               </div>
-            </div>
-         </div>
-
-
-         <!-- Culture and travel -->
-         <div class="col-title">CULTURE AND TRAVEL</div>
-         <div class="card">
-            <div class="story-item">
-               <div class="story-header">
-                  <div class="article-category">TRAVEL</div>
-                  <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story"/>
-               </div>
-               <div class="story-summary">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur officia sequi.
-               </div>
-            </div>
-            <div class="story-item">
-               <div class="story-header">
-                  <div class="article-category">TRAVEL</div>
-                  <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story"/>
-               </div>
-               <div class="story-summary">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur officia sequi.
-               </div>
-            </div>
-         </div>
-
-
-         <!-- In the magazine -->
-
-         <div class="card">
-            <div class="magazine-header">
-               <span class="icon-n"></span>
-               IN THE MAGAZINE
-            </div>
-            <div class="magazine-item">
-               <div class="story-header">
-                  <div class="magazine-issue-date">May 22 Issue</div>
-                  <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story"/>
-               </div>
-            </div>
-            <a href="#" class="mid-page-link">See All Features ></a>
-            <div class="features-item">
-               <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story"/>
-               <div class="features-item-category">
-                  <span class="mag-category">FEATURES</span>
-                  <span class="feature-category">HEALTH</span>
-               </div>
-               <div class="feature-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut quia
-                  enim!</div>
-            </div>
-            <div class="features-item">
-               <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story"/>
-               <div class="features-item-category">
-                  <span class="mag-category">FEATURES</span>
-                  <span class="feature-category">HEALTH</span>
-               </div>
-               <div class="feature-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut quia
-                  enim!</div>
-            </div>
-         </div>
-
-         <!-- Editors Pics -->
-         <div class="card">
-            <div class="magazine-header">
-               <span class="icon-n"></span>
-               EDITOR'S PICK
-            </div>
-            <hr class="hr-grey">
-
-            <div class="features-item">
-               <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story"/>
-               <div class="features-item-category">
-                  <span class="mag-category">FEATURES</span>
-               </div>
-               <div class="feature-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut quia
-                  enim!</div>
-               <div class="feature-intro">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit alias quidem
-                  omnis earum, vitae quod amet quasi quo nesciunt.
-               </div>
-            </div>
-
-            <div class="features-item">
-               <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story"/>
-               <div class="features-item-category">
-                  <span class="mag-category">FEATURES</span>
-               </div>
-               <div class="feature-summary">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut quia
-                  enim!</div>
-               <div class="feature-intro">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit alias quidem
-                  omnis earum, vitae quod amet quasi quo nesciunt.
-               </div>
-            </div>
-         </div>
-
-         <!-- Subscribe -->
-         <div class="card">
-            <div class="subscribe">
-               <h3 class="subscribe-title">SUBSCRIBE</h3>
-               <div class="subs-wrapper">
-                  <div class="magazine-images">
-                     <div class="previous-edition">
-                        <img src="https://picsum.photos/120/120" class="article-image" alt="featured-story"/>
+            <!-- Heroes of the pandemic -->
+            <section class="heroes-section order-sm-8">
+               <h3 class="col-title">HEROES OF THE PANDEMIC</h3>
+               <div class="row">
+                  <article class="col-md-4 story-item">
+                     <div class="story-header">
+                        <h6 class="article-category">PANDEMIC HEROES</h6>
+                        <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
                      </div>
-                     <div class="current-edition">
-                        <img src="https://picsum.photos/120/120" class="article-image" alt="featured-story"/>
+                     <div class="story-summary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur officia sequi.
                      </div>
-                  </div>
-                  <div class="magazine-info">
-                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis maxime iusto hic, nihil
-                     <br>
-                     incidunt laborum facere tempora nemo possimus amet distinctio nam eius obcaecati consequatur
-                     provident error reprehenderit magnam.
-                     <button>SUB</button>
-                  </div>
+                  </article>
+                  <article class="col-md-4 story-item">
+                     <div class="story-header">
+                        <h6 class="article-category">PANDEMIC HEROES</h6>
+                        <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
+                     </div>
+                     <div class="story-summary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur officia sequi.
+                     </div>
+                  </article>
+                  <article class="col-md-4 story-item">
+                     <div class="story-header">
+                        <h6 class="article-category">PANDEMIC HEROES</h6>
+                        <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
+                     </div>
+                     <div class="story-summary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur officia sequi.
+                     </div>
+                  </article>
                </div>
+            </section>
+            <!-- Heroes of the pandemic end -->
+
+            <!-- Culture and travel -->
+            <section class="culture-section">
+               <h5 class="col-title">CULTURE AND TRAVEL</h5>
+               <div class="row">
+                  <article class="col-md-4 story-item">
+                     <div class="story-header">
+                        <h6 class="article-category">TRAVEL</h6>
+                        <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
+                     </div>
+                     <div class="story-summary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur officia sequi.
+                     </div>
+                  </article>
+                  <article class="col-md-4 story-item">
+                     <div class="story-header">
+                        <h6 class="article-category">TRAVEL</h6>
+                        <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
+                     </div>
+                     <div class="story-summary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur officia sequi.
+                     </div>
+                  </article>
+                  <article class="col-md-4 story-item">
+                     <div class="story-header">
+                        <h6 class="article-category">TRAVEL</h6>
+                        <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
+                     </div>
+                     <div class="story-summary">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur officia sequi.
+                     </div>
+                  </article>
+               </div>
+            </section>
+            <!-- Culture and travel end-->
+
+            <!-- More Stories -->
+            <div class="col-title pt-4">MORE STORIES</div>
+            <div>
+               <ul class="opinion-items px-0 list-group list-group-flush">
+                  <li class="list-group-item opinion-item pt-1">
+                     <img src="https://picsum.photos/100/100" alt="debater-image">
+                     <div class="more-stories-item">
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <small>
+                           Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                        </small>
+                     </div>
+                  </li>
+                  <li class="list-group-item opinion-item pt-1">
+                     <img src="https://picsum.photos/100/100" alt="debater-image">
+                     <div class="more-stories-item">
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <small>
+                           Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                        </small>
+                     </div>
+                  </li>
+                  <li class="list-group-item opinion-item pt-1">
+                     <img src="https://picsum.photos/100/100" alt="debater-image">
+                     <div class="more-stories-item">
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <small>
+                           Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                        </small>
+                     </div>
+                  </li>
+                  <li class="list-group-item opinion-item pt-1">
+                     <img src="https://picsum.photos/100/100" alt="debater-image">
+                     <div class="more-stories-item">
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <small>
+                           Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                        </small>
+                     </div>
+                  </li>
+                  <li class="list-group-item opinion-item pt-1">
+                     <img src="https://picsum.photos/100/100" alt="debater-image">
+                     <div class="more-stories-item">
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <small>
+                           Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                        </small>
+                     </div>
+                  </li>
+                  <li class="list-group-item opinion-item pt-1">
+                     <img src="https://picsum.photos/100/100" alt="debater-image">
+                     <div class="more-stories-item">
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <small>
+                           Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                        </small>
+                     </div>
+                  </li>
+                  <li class="list-group-item opinion-item pt-1">
+                     <img src="https://picsum.photos/100/100" alt="debater-image">
+                     <div class="more-stories-item">
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <small>
+                           Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                        </small>
+                     </div>
+                  </li>
+                  <li class="list-group-item opinion-item pt-1">
+                     <img src="https://picsum.photos/100/100" alt="debater-image">
+                     <div class="more-stories-item">
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <small>
+                           Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                        </small>
+                     </div>
+                  </li>
+               </ul>
+            </div>
+            <!-- More Stories End -->
+         </div>
+         <!-- Top Story End -->
+
+         <!-- Featured Stories -->
+         <div class="col-sm-12 col-md-5 col-lg-3 order-sm-1 order-md-0 featured-stories border-before mt-sm-4 mt-md-0 order-lg-0 
+         ">
+            <div class="col-title">FEATURED STORIES</div>
+            <div class="content">
+               <article>
+                  <div class="wrap"></div>
+                  <div class="story-header">
+                     <h6 class="article-category">LATEST</h6>
+                     <img src="./assets/img/gary-arbery.webp" class="article-image" alt="featured-story" />
+                  </div>
+                  <h3 class="bold-text">In Arbery Shooting, George Zimmerman-Style Defense May Resonate With Jurors</h3>
+                  <div class="summary">
+                     The killers of Georgia jogger Ahmaud Arbery may claim self-defense. An earlier case-—and a local
+                     prosecutor's memo—may provide defense fodder.
+                  </div>
+               </article>
             </div>
          </div>
-         <!-- Newsletter -->
-         <div class="newsletter col-md-5 col-lg-4 flex-md fd-c">
-            <h3 class="subscribe-title">NEWSLETTER</h3>
+         <!-- Featured Stories End -->
 
-            <div class="card">
-               <div class="card-body">
-                  <h5 class="card-title">The Starting 5</h5>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+         <div class="col-sm-12 col-lg-3 order-sm-2 order-md-2 order-lg-2">
+            <!-- The Debate -->
+            <div class=" px-0 mx-md-auto border-before the-debate">
+               <div class="col-title">THE DEBATE</div>
+               <div class="debate-side debate-side-1 justify-content-md-center">
+                  <img src="./assets/img/caroline-glick.png" class="rounded-image-small" alt="debater-image">
+                  Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+               </div>
+               <div class="debate-versus">VS</div>
+               <div class="debate-side debate-side-2 justify-content-md-center">
+                  <img src="https://picsum.photos/63/63" class="rounded-image-small" alt="debater-image">
+                  Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+               </div>
+               <!-- ......The Debate ends -->
+            </div>
+            <!-- Opinion -->
+            <div class="the-opinion border-before pt-4">
+               <div class="col-title pt-4 ">OPINION</div>
+
+               <ul class="opinion-items px-0 list-group list-group-flush  justify-content-md-center">
+                  <li class="list-group-item opinion-item">
+                     <img src="https://picsum.photos/100/100" class="rounded-image-small" alt="debater-image">
+                     Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                  </li>
+                  <li class="list-group-item opinion-item">
+                     <img src="https://picsum.photos/100/100" class="rounded-image-small" alt="debater-image">
+                     Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                  </li>
+                  <li class="list-group-item opinion-item">
+                     <img src="https://picsum.photos/100/100" class="rounded-image-small" alt="debater-image">
+                     Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                  </li>
+               </ul>
+            </div>
+            <!-- Subscribe -->
+            <div class="py-3 px-md-5 mx-md-auto">
+               <div class="card-header">
+                  <div class="magazine-header pt-2">
+                     <span class="icon-n"></span>
+                     START YOUR DAY WITH OUR TOP 5 ARTICLES
+                  </div>
                   <div class="form-group">
                      <input type="email" class="form-control" placeholder="Enter email">
                   </div>
-                  <button type="button" class="btn btn-primary btn-lg btn-block">FREE SIGN UP ></button>
+                  <button type="button" class="btn btn-danger btn-lg btn-block">FREE SIGN UP ></button>
                </div>
             </div>
-         </div>
+            <!-- End Subscribe -->
 
+         </div>
       </div>
+
+      <div class="row row-eq-height">
+         <!-- In the magazine -->
+         <div class="magazine-header pt-3 mx-auto w-100">
+            <span class="icon-n"></span>
+            <h3>IN THE MAGAZINE</h3>
+         </div>
+         <hr class="pb-2 w-80" style="width: 80%;">
+
+         <article class="features-item col-md-3">
+            <div class="story-item">
+               <div class="story-header">
+                  <h6 class="article-category">JUNE 05 ISSUE</h6>
+                  <img src="https://picsum.photos/200/165" class="article-image" alt="featured-story" />
+               </div>
+               <div class="card-header">
+                  SEE ALL FEATURES >
+               </div>
+            </div>
+
+         </article>
+         <div class="features-item col-md-3">
+            <div class="story-item">
+               <div class="story-header">
+                  <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
+               </div>
+            </div>
+            <div class="magazine-buttons pt-2">
+               <span class="mag-cat">lorem</span>
+               <span class="cat">lorem</span>
+            </div>
+
+            <div class="feature-summary pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut quia
+               enim!</div>
+            <div class="feature-intro">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit alias quidem
+               omnis earum, vitae quod amet quasi quo nesciunt.
+            </div>
+         </div>
+         <div class="features-item col-md-3">
+            <div class="story-item">
+               <div class="story-header">
+                  <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
+               </div>
+            </div>
+            <div class="magazine-buttons pt-2">
+               <span class="mag-cat">lorem</span>
+               <span class="cat">lorem</span>
+            </div>
+
+            <div class="feature-summary pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut quia
+               enim!</div>
+            <div class="feature-intro">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit alias quidem
+               omnis earum, vitae quod amet quasi quo nesciunt.
+            </div>
+         </div>
+         <div class="features-item col-md-3">
+            <div class="story-item">
+               <div class="story-header">
+                  <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
+               </div>
+            </div>
+            <div class="magazine-buttons pt-2">
+               <span class="mag-cat">lorem</span>
+               <span class="cat">lorem</span>
+            </div>
+
+            <div class="feature-summary pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut quia
+               enim!</div>
+            <div class="feature-intro">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit alias quidem
+               omnis earum, vitae quod amet quasi quo nesciunt.
+            </div>
+         </div>
+         <div class="features-item col-md-3">
+            <div class="story-item">
+               <div class="story-header">
+                  <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
+               </div>
+            </div>
+            <div class="magazine-buttons pt-2">
+               <span class="mag-cat">lorem</span>
+               <span class="cat">lorem</span>
+            </div>
+
+            <div class="feature-summary pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut quia
+               enim!</div>
+            <div class="feature-intro">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit alias quidem
+               omnis earum, vitae quod amet quasi quo nesciunt.
+            </div>
+         </div>
+         <div class="features-item col-md-3">
+            <div class="story-item">
+               <div class="story-header">
+                  <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
+               </div>
+            </div>
+            <div class="magazine-buttons pt-2">
+               <span class="mag-cat">lorem</span>
+               <span class="cat">lorem</span>
+            </div>
+
+            <div class="feature-summary pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut quia
+               enim!</div>
+            <div class="feature-intro">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit alias quidem
+               omnis earum, vitae quod amet quasi quo nesciunt.
+            </div>
+         </div>
+         <div class="features-item col-md-3">
+            <div class="story-item">
+               <div class="story-header">
+                  <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
+               </div>
+            </div>
+            <div class="magazine-buttons pt-2">
+               <span class="mag-cat">lorem</span>
+               <span class="cat">lorem</span>
+            </div>
+
+            <div class="feature-summary pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut quia
+               enim!</div>
+            <div class="feature-intro">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit alias quidem
+               omnis earum, vitae quod amet quasi quo nesciunt.
+            </div>
+         </div>
+         <div class="features-item col-md-3">
+            <div class="story-item">
+               <div class="story-header">
+                  <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
+               </div>
+            </div>
+            <div class="magazine-buttons pt-2">
+               <span class="mag-cat">lorem</span>
+               <span class="cat">lorem</span>
+            </div>
+
+            <div class="feature-summary pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut quia
+               enim!</div>
+            <div class="feature-intro">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit alias quidem
+               omnis earum, vitae quod amet quasi quo nesciunt.
+            </div>
+         </div>
+         <!-- End In the magazine -->
+      </div>
+
+      <div class="row">
+         <!-- Editors Pics -->
+         <div class="magazine-header pt-3 mx-auto w-100">
+            <span class="icon-n"></span>
+            <h3>EDITOR'S PICK</h3>
+         </div>
+         <hr class="pb-2 w-80" style="width: 80%;">
+
+         <article class="features-item col-lg-3 col-md-6">
+            <div class="story-item">
+               <div class="story-header">
+                  <h6 class="article-category">TRAVEL</h6>
+                  <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
+               </div>
+            </div>
+
+            <div class="feature-summary pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut quia
+               enim!</div>
+            <div class="feature-intro">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit alias quidem
+               omnis earum, vitae quod amet quasi quo nesciunt.
+            </div>
+         </article>
+         <article class="features-item col-lg-3 col-md-6">
+            <div class="story-item">
+               <div class="story-header">
+                  <h6 class="article-category">TRAVEL</h6>
+                  <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
+               </div>
+            </div>
+
+            <div class="feature-summary pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut quia
+               enim!</div>
+            <div class="feature-intro">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit alias quidem
+               omnis earum, vitae quod amet quasi quo nesciunt.
+            </div>
+         </article>
+         <article class="features-item col-lg-3 col-md-6">
+            <div class="story-item">
+               <div class="story-header">
+                  <h6 class="article-category">TRAVEL</h6>
+                  <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
+               </div>
+            </div>
+
+            <div class="feature-summary pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut quia
+               enim!</div>
+            <div class="feature-intro">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit alias quidem
+               omnis earum, vitae quod amet quasi quo nesciunt.
+            </div>
+         </article>
+         <article class="features-item col-lg-3 col-md-6">
+            <div class="story-item">
+               <div class="story-header">
+                  <h6 class="article-category">TRAVEL</h6>
+                  <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
+               </div>
+            </div>
+
+            <div class="feature-summary pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut quia
+               enim!</div>
+            <div class="feature-intro">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit alias quidem
+               omnis earum, vitae quod amet quasi quo nesciunt.
+            </div>
+         </article>
+
+         <!-- End Editors Picks -->
+      </div>
+
+      <!-- US -->
+      <section class="us">
+         <h2 class="block-title">US</h2>
+         <div class="row">
+            <div class="features-item col-md-4">
+               <div class="story-item">
+                  <div class="story-header">
+                     <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
+                  </div>
+               </div>
+
+               <div class="feature-summary pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut quia
+                  enim!</div>
+            </div>
+
+            <div class="features-item col-md-4">
+               <div class="story-item">
+                  <div class="story-header">
+                     <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
+                  </div>
+               </div>
+
+               <div class="feature-summary pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut quia
+                  enim!</div>
+            </div>
+
+            <ul class="opinion-items px-0 list-group list-group-flush py-sm-3  py-lg-0 col-md-4">
+               <li class="list-group-item opinion-item pt-sm-1">
+                  <img src="https://picsum.photos/100/100" alt="debater-image">
+                  <div class="more-stories-item">
+                     <h5>Lorem ipsum dolor sit amet.</h5>
+                     <small>
+                        Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                     </small>
+                  </div>
+               </li>
+               <li class="list-group-item opinion-item pt-1">
+                  <img src="https://picsum.photos/100/100" alt="debater-image">
+                  <div class="more-stories-item">
+                     <h5>Lorem ipsum dolor sit amet.</h5>
+                     <small>
+                        Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                     </small>
+                  </div>
+               </li>
+               <li class="list-group-item opinion-item pt-1">
+                  <img src="https://picsum.photos/100/100" alt="debater-image">
+                  <div class="more-stories-item">
+                     <h5>Lorem ipsum dolor sit amet.</h5>
+                     <small>
+                        Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                     </small>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <!-- End US -->
+
+      <!-- World -->
+      <section class="world">
+         <h2 class="block-title">WORLD</h2>
+
+         <div class="row mt-lg-3">
+            <div class="features-item col-md-4">
+               <div class="story-item">
+                  <div class="story-header">
+                     <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
+                  </div>
+               </div>
+
+               <div class="feature-summary pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut quia
+                  enim!</div>
+            </div>
+
+            <div class="features-item col-md-4">
+               <div class="story-item">
+                  <div class="story-header">
+                     <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
+                  </div>
+               </div>
+
+               <div class="feature-summary pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut quia
+                  enim!</div>
+            </div>
+
+            <ul class="opinion-items px-0 list-group list-group-flush  col-md-4 py-sm-3  py-lg-0">
+               <li class="list-group-item opinion-item pt-1">
+                  <img src="https://picsum.photos/100/100" alt="debater-image">
+                  <div class="more-stories-item">
+                     <h5>Lorem ipsum dolor sit amet.</h5>
+                     <small>
+                        Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                     </small>
+                  </div>
+               </li>
+               <li class="list-group-item opinion-item pt-1">
+                  <img src="https://picsum.photos/100/100" alt="debater-image">
+                  <div class="more-stories-item">
+                     <h5>Lorem ipsum dolor sit amet.</h5>
+                     <small>
+                        Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                     </small>
+                  </div>
+               </li>
+               <li class="list-group-item opinion-item pt-1">
+                  <img src="https://picsum.photos/100/100" alt="debater-image">
+                  <div class="more-stories-item">
+                     <h5>Lorem ipsum dolor sit amet.</h5>
+                     <small>
+                        Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                     </small>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <!-- End World -->
+
+      <!-- Business -->
+      <section class="business">
+         <h2 class="block-title">BUSINESS</h2>
+         <div class="row mt-lg-3">
+            <div class="features-item col-md-4">
+               <div class="story-item">
+                  <div class="story-header">
+                     <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
+                  </div>
+               </div>
+
+               <div class="feature-summary pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut quia
+                  enim!</div>
+            </div>
+
+            <div class="features-item col-md-4">
+               <div class="story-item">
+                  <div class="story-header">
+                     <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
+                  </div>
+               </div>
+
+               <div class="feature-summary pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut quia
+                  enim!</div>
+            </div>
+
+            <ul class="opinion-items col-md-4 px-0 list-group list-group-flush py-sm-3  py-lg-0">
+               <li class="list-group-item opinion-item pt-1">
+                  <img src="https://picsum.photos/100/100" alt="debater-image">
+                  <div class="more-stories-item">
+                     <h5>Lorem ipsum dolor sit amet.</h5>
+                     <small>
+                        Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                     </small>
+                  </div>
+               </li>
+               <li class="list-group-item opinion-item pt-1">
+                  <img src="https://picsum.photos/100/100" alt="debater-image">
+                  <div class="more-stories-item">
+                     <h5>Lorem ipsum dolor sit amet.</h5>
+                     <small>
+                        Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                     </small>
+                  </div>
+               </li>
+               <li class="list-group-item opinion-item pt-1">
+                  <img src="https://picsum.photos/100/100" alt="debater-image">
+                  <div class="more-stories-item">
+                     <h5>Lorem ipsum dolor sit amet.</h5>
+                     <small>
+                        Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                     </small>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <!-- End Business -->
+
+      <!-- Tech and Culture -->
+      <section class="tech">
+         <h2 class="block-title">TECH AND CULTURE</h2>
+         <div class="row mt-lg-3">
+            <div class="features-item col-md-4">
+               <div class="story-item">
+                  <div class="story-header">
+                     <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
+                  </div>
+               </div>
+
+               <div class="feature-summary pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut quia
+                  enim!</div>
+            </div>
+
+            <div class="features-item col-md-4">
+               <div class="story-item">
+                  <div class="story-header">
+                     <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
+                  </div>
+               </div>
+
+               <div class="feature-summary pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut quia
+                  enim!</div>
+            </div>
+
+            <ul class="opinion-items col-md-4 px-0 list-group list-group-flush py-sm-3 py-lg-0">
+               <li class="list-group-item opinion-item pt-1">
+                  <img src="https://picsum.photos/100/100" alt="debater-image">
+                  <div class="more-stories-item">
+                     <h5>Lorem ipsum dolor sit amet.</h5>
+                     <small>
+                        Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                     </small>
+                  </div>
+               </li>
+               <li class="list-group-item opinion-item pt-1">
+                  <img src="https://picsum.photos/100/100" alt="debater-image">
+                  <div class="more-stories-item">
+                     <h5>Lorem ipsum dolor sit amet.</h5>
+                     <small>
+                        Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                     </small>
+                  </div>
+               </li>
+               <li class="list-group-item opinion-item pt-1">
+                  <img src="https://picsum.photos/100/100" alt="debater-image">
+                  <div class="more-stories-item">
+                     <h5>Lorem ipsum dolor sit amet.</h5>
+                     <small>
+                        Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                     </small>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <!-- End Tech And Culture -->
+
+      <!-- Sports -->
+      <section class="sports">
+         <h2 class="block-title">SPORTS</h2>
+         <div class="row mt-lg-3">
+            <div class="features-item col-md-4">
+               <div class="story-item">
+                  <div class="story-header">
+                     <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
+                  </div>
+               </div>
+
+               <div class="feature-summary pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut quia
+                  enim!</div>
+            </div>
+
+            <div class="features-item col-md-4">
+               <div class="story-item">
+                  <div class="story-header">
+                     <img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" />
+                  </div>
+               </div>
+
+               <div class="feature-summary pt-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ut quia
+                  enim!</div>
+            </div>
+            <ul class="opinion-items col-md-4 px-0 list-group list-group-flush py-sm-3 py-lg-0">
+               <li class="list-group-item opinion-item pt-1">
+                  <img src="https://picsum.photos/100/100" alt="debater-image">
+                  <div class="more-stories-item">
+                     <h5>Lorem ipsum dolor sit amet.</h5>
+                     <small>
+                        Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                     </small>
+                  </div>
+               </li>
+               <li class="list-group-item opinion-item pt-1">
+                  <img src="https://picsum.photos/100/100" alt="debater-image">
+                  <div class="more-stories-item">
+                     <h5>Lorem ipsum dolor sit amet.</h5>
+                     <small>
+                        Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                     </small>
+                  </div>
+               </li>
+               <li class="list-group-item opinion-item pt-1">
+                  <img src="https://picsum.photos/100/100" alt="debater-image">
+                  <div class="more-stories-item">
+                     <h5>Lorem ipsum dolor sit amet.</h5>
+                     <small>
+                        Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                     </small>
+                  </div>
+               </li>
+            </ul>
+         </div>
+      </section>
+      <!-- End Sports -->
+      <section class="subscribe-and-newsletter">
+         <div class="row">
+            <!-- Subscribe -->
+
+            <div class="col-md-12 col-lg-8">
+               <div class="subscribe">
+                  <h3 class="subscribe-title pt-3 pl-3">SUBSCRIBE</h3>
+                  <div class="subs-wrapper">
+                     <div class="magazine-images">
+                        <div class="previous-edition">
+                           <img src="https://picsum.photos/120/120" class="article-image" alt="featured-story" />
+                        </div>
+                        <div class="current-edition">
+                           <img src="https://picsum.photos/120/120" class="article-image" alt="featured-story" />
+                        </div>
+                     </div>
+                     <div class="magazine-info">
+                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis maxime iusto hic,
+                           nihil
+                        </p>
+                        <p> incidunt laborum facere tempora nemo possimus amet distinctio nam eius obcaecati consequatur
+                           provident error reprehenderit magnam.
+                        </p>
+                        <button type="button" class="btn btn-danger btn-lg btn-block">FREE SIGN UP ></button>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- End Subscribe -->
+
+            <!-- Newsletter -->
+            <div class="newsletter col-md-12 col-lg-4 flex-md fd-c">
+               <h3 class="subscribe-title pt-3 pl-3">NEWSLETTER</h3>
+
+               <div class="card subs-wrapper">
+                  <div class="card-body">
+                     <h5 class="card-title">The Starting 5</h5>
+                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                     <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Enter email">
+                     </div>
+                     <button type="button" class="btn btn-danger btn-lg btn-block">FREE SIGN UP ></button>
+                  </div>
+               </div>
+            </div>
+            <!-- Newsletter -->
+         </div>
+      </section>
       <!-- Footer -->
+      <footer>
+         <div class="footer-header px-3 py-2 text-dark align-baseline">
+            <div class="row d-flex align-items-lg-baseline">
+               <img src="./assets/img/news-logo-footer.svg" class="footer-image" alt="Footer Image">
+               <p class="copyright">&copy; 2020 Newsweek</p>
+               <ul class="d-flex justify-content-around list-unstyled w-50 ml-md-auto">
+                  <li><a class="" href="#"><i class="fab fa-facebook-square"></i></a></li>
+                  <li><a class="" href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a class="" href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a class="" href="#"><i class="fab fa-tumblr-square"></i></a></li>
+                  <li><a class="" href="#"><i class="fab fa-linkedin-in"></i></a></li>
+               </ul>
+            </div>
+         </div>
+         <span class="footer-links">
+            <span class="footer-middle-header font-weight-bold">Editions: </span>
+            <a href="#">U.S. Edition</a> |
+            <a href="#">日本</a> |
+            <a href="#">Pakistan</a> |
+            <a href="#">Polska</a> |
+            <a href="#">România</a>
+         </span>
+         <span class="footer-links">
+            <a href="#">About Us</a> |
+            <a href="#">Corrections</a> |
+            <a href="#">Contact Us</a> |
+            <a href="#">Editorial Guidelines</a> |
+            <a href="#">Advertise</a> |
+            <a href="#">Copyright</a> |
+            <a href="#">Terms &amp; Conditions</a> |
+            <a href="#">Privacy Policy</a> |
+            <a href="#">Cookie Policy</a> |
+            <a href="#">Terms of Sale</a> |
+            <a href="#">Archive</a> |
+            <a href="#">Announcement</a> |
+            <a href="#">Consent preferences</a>
+         </span>
+
+      </footer>
    </div>
+   <script src="https://kit.fontawesome.com/edadb77036.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
