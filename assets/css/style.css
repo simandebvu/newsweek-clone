@@ -6,6 +6,7 @@ body {
 :root {
   --main-page-color: #f72210;
 }
+
 /* NAVIGATION */
 .navbar {
   background-color: var(--main-page-color);
@@ -21,15 +22,15 @@ body {
   text-transform: uppercase;
 }
 
-.nav-link:hover{
+.nav-link:hover {
   text-decoration: underline;
 }
 
-.nav-item a{
+.nav-item a {
   font-size: 12px;
   line-height: 20px;
   font-weight: bold;
-  font-family: "Roboto Condensed",sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   text-transform: capitalize;
 }
 
@@ -39,10 +40,11 @@ body {
   background-color: transparent;
   margin-right: 2px;
 }
+
 .sub-button {
   color: var(--main-page-color);
-  background-color: white;
-  border-radius: 0em;
+  background-color: #fff;
+  border-radius: 0;
 }
 
 /* HELPER CLASSES */
@@ -63,6 +65,7 @@ article {
   font-size: 16px;
   padding: 10px 0;
 }
+
 /* PAGE ITEMS */
 
 .item-separator-large {
@@ -82,7 +85,8 @@ article {
 .icon-n {
   width: 29px;
   height: 28px;
-  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain
+  background:
+    url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain
     no-repeat #f72210;
   margin-right: 10px;
 }
@@ -100,7 +104,7 @@ article {
   color: var(--main-page-color);
 }
 
-/* --------------> THE DEBATE -------------->*/
+/* --------------> THE DEBATE --------------> */
 
 .debate-side-1 {
   border-top: 4px solid #f92859;
@@ -148,6 +152,7 @@ article {
   left: 0;
   right: 0;
 }
+
 /* --------------> END THE DEBATE --------------> */
 
 /* --------------> START THE OPINIONS --------------> */
@@ -164,10 +169,11 @@ article {
   font-size: 22px;
   line-height: 22px;
 }
+
 /* --------------> END US --------------> */
 
 .hr-grey {
-  border: 1px solid #333333;
+  border: 1px solid #333;
   margin: 0 10px;
 }
 
@@ -187,6 +193,7 @@ article {
 .feature-summary {
   font-weight: bold;
 }
+
 .story-header {
   position: relative;
 }
@@ -206,9 +213,11 @@ article {
   align-items: center;
   padding: 5px;
 }
+
 .opinion-item img {
   margin-right: 5px;
 }
+
 .debate-side {
   padding-top: 10px;
   padding-bottom: 4px;
@@ -231,6 +240,7 @@ article {
   top: 15px;
   left: 110px;
 }
+
 .magazine-images img {
   height: 228px;
   width: 170px;
@@ -242,6 +252,7 @@ article {
   display: flex;
   flex-direction: column;
 }
+
 /* IN THE MAGAZINE */
 .mag-cat {
   padding: 0 7px;
@@ -253,6 +264,7 @@ article {
 .cat {
   color: var(--main-page-color);
 }
+
 /* CATEGORY ITEMS */
 
 .article-category {
@@ -272,6 +284,7 @@ article {
   bottom: 0;
   font-weight: bold;
 }
+
 .mag-category {
   color: #000;
   background-color: var(--main-page-color);
@@ -293,7 +306,6 @@ article {
 }
 
 @media (min-width: 768px) {
-
   .custom-navbar-button {
     margin-right: 0;
   }
@@ -306,7 +318,7 @@ article {
     position: absolute;
     top: 15px;
     left: 355px;
-}
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -317,11 +329,13 @@ article {
   .featured-stories::before {
     display: none;
   }
+
   .current-edition {
     position: absolute;
     top: 20px;
     left: 355px;
   }
+
   .main-view {
     max-height: 1000px;
     overflow: scroll;
