@@ -8,6 +8,8 @@
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <!-- Google Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    <link rel="stylesheet" href="./assets/css/style.css">
 
 </head>
@@ -22,8 +24,8 @@
                   alt="Newsweek Logo"></a>
          </div>
          <div class="d-flex">
-            <button class="btn nav-link d-inline nav-button login-button p-0">Log in</button>
-            <button class="btn nav-link d-inline nav-button sub-button p-0">Subscribe</button>
+            <button class="btn nav-link d-inline nav-button login-button p-0 px-md-3">Log in</button>
+            <button class="btn nav-link d-inline nav-button sub-button p-0 px-md-3">Subscribe</button>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
@@ -34,7 +36,7 @@
 
    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="collapse navbar-collapse" id="navbarNav">
-         <ul class="navbar-nav  d-flex justify-content-between w-100">
+         <ul class="navbar-nav d-flex justify-content-between w-100 align-items-baseline">
             <li class="nav-item active">
                <a class="nav-link" href="#">US </a>
             </li>
@@ -53,6 +55,22 @@
             <li class="nav-item active">
                <a class="nav-link" href="#">NEWSGEEK </a>
             </li>
+            <li class="nav-item active">
+               <a class="nav-link" href="#">SPORTS </a>
+            </li>
+            <li class="nav-item active">
+               <a class="nav-link" href="#">HEALTH </a>
+            </li>
+            <li class="nav-item active">
+               <a class="nav-link" href="#">THE DEBATE </a>
+            </li>
+            <li class="nav-item active">
+               <a class="nav-link" href="#">VANTAGE </a>
+            </li>
+            <li class="nav-item active">
+               <a class="nav-link" href="#">WEATHER </a>
+            </li>
+            <li class="d-flex flex-row align-items-center p-3"><input type="text" placeholder="Search"><span class="material-icons">search</span></li>
 
          </ul>
       </div>
@@ -63,7 +81,7 @@
    <div class="container-fluid mx-0">
       <div class="row">
          <!-- Top Story -->
-         <div class="col-sm-12 col-md-6 order-lg-1">
+         <div class="col-sm-12 col-md-6 order-lg-1 main-view" >
             <div class="col-title">TOP STORY</div>
             <div class="top-story">
                <div class="story-header">
@@ -148,41 +166,89 @@
 
             <!-- More Stories -->
             <div class="col-title pt-4">MORE STORIES</div>
-            <ul class="opinion-items px-0 list-group list-group-flush">
-               <li class="list-group-item opinion-item pt-1">
-                  <img src="https://picsum.photos/100/100" alt="debater-image">
-                  <div class="more-stories-item">
-                     <h5>Lorem ipsum dolor sit amet.</h5>
-                     <small>
-                        Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
-                     </small>
-                  </div>
-               </li>
-               <li class="list-group-item opinion-item pt-1">
-                  <img src="https://picsum.photos/100/100" alt="debater-image">
-                  <div class="more-stories-item">
-                     <h5>Lorem ipsum dolor sit amet.</h5>
-                     <small>
-                        Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
-                     </small>
-                  </div>
-               </li>
-               <li class="list-group-item opinion-item pt-1">
-                  <img src="https://picsum.photos/100/100" alt="debater-image">
-                  <div class="more-stories-item">
-                     <h5>Lorem ipsum dolor sit amet.</h5>
-                     <small>
-                        Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
-                     </small>
-                  </div>
-               </li>
-            </ul>
+            <div>
+               <ul class="opinion-items px-0 list-group list-group-flush">
+                  <li class="list-group-item opinion-item pt-1">
+                     <img src="https://picsum.photos/100/100" alt="debater-image">
+                     <div class="more-stories-item">
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <small>
+                           Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                        </small>
+                     </div>
+                  </li>
+                  <li class="list-group-item opinion-item pt-1">
+                     <img src="https://picsum.photos/100/100" alt="debater-image">
+                     <div class="more-stories-item">
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <small>
+                           Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                        </small>
+                     </div>
+                  </li>
+                  <li class="list-group-item opinion-item pt-1">
+                     <img src="https://picsum.photos/100/100" alt="debater-image">
+                     <div class="more-stories-item">
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <small>
+                           Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                        </small>
+                     </div>
+                  </li>
+                  <li class="list-group-item opinion-item pt-1">
+                     <img src="https://picsum.photos/100/100" alt="debater-image">
+                     <div class="more-stories-item">
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <small>
+                           Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                        </small>
+                     </div>
+                  </li>
+                  <li class="list-group-item opinion-item pt-1">
+                     <img src="https://picsum.photos/100/100" alt="debater-image">
+                     <div class="more-stories-item">
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <small>
+                           Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                        </small>
+                     </div>
+                  </li>
+                  <li class="list-group-item opinion-item pt-1">
+                     <img src="https://picsum.photos/100/100" alt="debater-image">
+                     <div class="more-stories-item">
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <small>
+                           Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                        </small>
+                     </div>
+                  </li>
+                  <li class="list-group-item opinion-item pt-1">
+                     <img src="https://picsum.photos/100/100" alt="debater-image">
+                     <div class="more-stories-item">
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <small>
+                           Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                        </small>
+                     </div>
+                  </li>
+                  <li class="list-group-item opinion-item pt-1">
+                     <img src="https://picsum.photos/100/100" alt="debater-image">
+                     <div class="more-stories-item">
+                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <small>
+                           Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                        </small>
+                     </div>
+                  </li>
+               </ul>
+            </div>
             <!-- More Stories End -->
          </div>
          <!-- Top Story End -->
 
          <!-- Featured Stories -->
-         <div class="col-sm-12 col-md-3 featured-stories border-before mt-sm-4 mt-md-0 order-lg-0">
+         <div class="col-sm-12 col-md-3 featured-stories border-before mt-sm-4 mt-md-0 order-lg-0 
+         ">
             <div class="col-title">FEATURED STORIES</div>
             <div class="content">
                <article>
@@ -201,7 +267,7 @@
          </div>
          <!-- Featured Stories End -->
 
-         <div class="col-sm-12 col-md-3  order-lg-2">
+         <div class="col-sm-12  col-md-3 order-lg-2">
             <!-- The Debate -->
             <div class=" px-0 border-before the-debate">
                <div class="col-title">THE DEBATE</div>
