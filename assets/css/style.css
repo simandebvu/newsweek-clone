@@ -244,6 +244,17 @@ article {
   display: flex;
   flex-direction: column;
 }
+/* IN THE MAGAZINE */
+.mag-cat{
+  padding: 0 7px;
+  background-color:var(--main-page-color);
+  color: white;
+  margin-right: 7px;
+}
+
+.cat{
+  color: var(--main-page-color);
+}
 /* CATEGORY ITEMS */
 
 .article-category {
@@ -277,6 +288,11 @@ article {
   font-weight: bold;
 }
 
+.fab,
+.footer-links a{
+  color: #000;
+}
+
 @media screen and (min-width: 992px) {
   .navbar-brand img {
     height: 60px;
@@ -285,4 +301,10 @@ article {
   .featured-stories::before {
     display: none;
   }
+  .current-edition {
+    position: absolute;
+    top: 20px;
+    left: 355px;
+}
+
 }
