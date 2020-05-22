@@ -23,12 +23,16 @@ body {
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color: rgba(0,0,0);
+  color: rgba(0, 0, 0);
 }
-.navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
   color: var(--main-page-color);
 }
 
+.secondary-nav {
+  background-color: #ffffff!important;
+}
 
 .nav-item a {
   font-size: 12px;
@@ -52,6 +56,28 @@ body {
 }
 
 /* HELPER CLASSES */
+.link-deco,
+.link-no-deco,
+.article-link{
+  color: #000000;
+}
+
+.article-link:hover{
+  color: #000000;
+  text-decoration: underline;
+  text-decoration-color: var(--main-page-color);
+}
+
+.link-no-deco:hover{
+  text-decoration: none;
+  color: #000000;
+}
+
+.link-deco:hover{
+  color:var(--main-page-color);
+  text-decoration: none;
+}
+
 .bold-text {
   font-weight: bold;
 }
@@ -89,8 +115,7 @@ article {
 .icon-n {
   width: 29px;
   height: 28px;
-  background:
-    url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain
+  background: url(https://g.newsweek.com/www/images/logo-n1.svg) center/contain
     no-repeat #f72210;
   margin-right: 10px;
 }
