@@ -1,6 +1,6 @@
 # NEWSWEEK Clone
 
-> One paragraph statement about the project.
+> Cloning the newsweek site using bootstrap
 
 ![screenshot](./app_screenshot.png)
 
@@ -10,6 +10,7 @@ A replica of the news site Newsweek.com using the Bootstrap framework.
 
 - HTML
 - CSS
+- BOOTSTRAP
 
 ## Live Demo
 
