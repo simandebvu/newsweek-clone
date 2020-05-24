@@ -9,6 +9,7 @@ body {
 }
 
 /* NAVIGATION */
+.btn-red,
 .navbar {
   background-color: var(--main-page-color);
 }
@@ -273,7 +274,7 @@ article {
   .current-edition {
     position: absolute;
     top: 15px;
-    left: 355px;
+    left: 65px;
   }
 }
 
@@ -293,7 +294,7 @@ article {
   .current-edition {
     position: absolute;
     top: 20px;
-    left: 355px;
+    left: 35px;
   }
 
   .main-view {
