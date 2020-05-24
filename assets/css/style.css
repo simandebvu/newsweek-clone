@@ -102,10 +102,24 @@ article {
   margin-right: 10px;
 }
 
+.newsletter-image{
+  height: 235px;
+  width: 85px;
+}
+
 .subs-wrapper {
   background-color: #f4f5f6;
   overflow: hidden;
-  max-height: 235px;
+}
+
+.news-wrapper{
+  background-color: #ffffff;
+  overflow: hidden;
+  max-height: 280px;
+}
+
+.newsletter-thumb{
+  display: none;
 }
 
 .subscribe-title {
@@ -170,6 +184,10 @@ article {
   line-height: 22px;
 }
 
+.subs-wrapper {
+  background-color: #f4f5f6;
+}
+
 .hr-grey {
   border: 1px solid #333;
   margin: 0 10px;
@@ -205,12 +223,12 @@ article {
 .current-edition {
   position: absolute;
   top: 15px;
-  left: 110px;
+  left: 125px;
 }
 
 .magazine-images img {
-  height: 200px;
-  width: 170px;
+  height: 150px;
+  width: 150px;
 }
 
 .mag-cat {
@@ -267,6 +285,18 @@ article {
     margin-right: 0;
   }
 
+  .news-wrapper{
+    overflow: hidden;
+    min-height: 270px;
+    max-height: 270px;
+  }
+
+  .subs-wrapper {
+    background-color: #f4f5f6;
+    overflow: hidden;
+    max-height: 270px;
+  }
+
   .custom-navbar-button button {
     font-size: 1rem;
   }
@@ -274,7 +304,10 @@ article {
   .current-edition {
     position: absolute;
     top: 15px;
-    left: 65px;
+    left: 90px;
+  }
+  .newsletter-thumb{
+    display: block;
   }
 }
 
@@ -294,7 +327,19 @@ article {
   .current-edition {
     position: absolute;
     top: 20px;
-    left: 35px;
+    left: 80px;
+  }
+
+  .news-wrapper{
+    background-color: #ffffff;
+    overflow: hidden;
+    min-height: 250px;
+    max-height: 250px;
+  }
+  .subs-wrapper {
+    background-color: #f4f5f6;
+    overflow: hidden;
+    max-height: 250px;
   }
 
   .main-view {
@@ -305,5 +350,12 @@ article {
 
   .main-view::-webkit-scrollbar {
     display: none;
+  }
+  .newsletter-thumb{
+    display: block;
+  }
+
+  .btn-subs{
+    width: 50%;
   }
 }
