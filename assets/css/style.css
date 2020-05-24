@@ -14,16 +14,10 @@ body {
 
 .navbar-brand img {
   height: 20px;
-  padding-left: 3px;
 }
 
 .nav-button {
   font-size: 14px;
-  text-transform: uppercase;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color: rgba(0, 0, 0);
 }
 
 .navbar-light .navbar-nav .nav-link:focus,
@@ -31,37 +25,17 @@ body {
   color: var(--main-page-color);
 }
 
-.secondary-nav {
-  background-color: #fff !important;
-}
-
 .nav-item a {
   font-size: 12px;
   line-height: 20px;
-  font-weight: bold;
   font-family: "Roboto Condensed", sans-serif;
-  text-transform: capitalize;
 }
 
-.login-button {
-  color: #fff;
-  text-decoration: none;
-  background-color: transparent;
-  margin-right: 2px;
-}
 
 .sub-button {
   color: var(--main-page-color);
-  background-color: #fff;
-  border-radius: 0;
 }
 
-/* HELPER CLASSES */
-.link-deco,
-.link-no-deco,
-.article-link {
-  color: #000;
-}
 
 .article-link:hover {
   color: #000;
@@ -79,14 +53,6 @@ body {
   text-decoration: none;
 }
 
-.bold-text {
-  font-weight: bold;
-}
-
-p {
-  padding-top: 10px;
-}
-
 article {
   padding-bottom: 20px;
 }
@@ -96,8 +62,6 @@ article {
   font-size: 16px;
   padding: 10px 0;
 }
-
-/* PAGE ITEMS */
 
 .item-separator-large {
   background-color: #f4f5f7;
@@ -134,8 +98,6 @@ article {
   padding-bottom: 15px;
   color: var(--main-page-color);
 }
-
-/* --------------> THE DEBATE --------------> */
 
 .debate-side-1 {
   border-top: 4px solid #f92859;
@@ -184,15 +146,6 @@ article {
   right: 0;
 }
 
-/* --------------> END THE DEBATE --------------> */
-
-/* --------------> START THE OPINIONS --------------> */
-
-/* --------------> END THE OPINIONS --------------> */
-
-/* --------------> EDITORS PICK --------------> */
-
-/* -------------->  US --------------> */
 .block-title {
   border-top: 1px solid #d9d9d9;
   color: #f72210;
@@ -201,16 +154,11 @@ article {
   line-height: 22px;
 }
 
-/* --------------> END US --------------> */
-
 .hr-grey {
   border: 1px solid #333;
   margin: 0 10px;
 }
 
-/* --------------> END EDITORS PICK --------------> */
-
-/* --------------> FOOTER --------------> */
 .footer-image {
   width: 236px;
   height: 36px;
@@ -218,9 +166,6 @@ article {
   margin-bottom: 12px;
 }
 
-/* --------------> END FOOTER --------------> */
-
-/* CONTENT ITEMS */
 .feature-summary {
   font-weight: bold;
 }
@@ -233,32 +178,7 @@ article {
   width: 100%;
 }
 
-.magazine-header {
-  display: flex;
-  justify-content: center;
-  font-weight: bold;
-}
-
-.opinion-item {
-  display: flex;
-  align-items: center;
-  padding: 5px;
-}
-
-.opinion-item img {
-  margin-right: 5px;
-}
-
-.debate-side {
-  padding-top: 10px;
-  padding-bottom: 4px;
-  display: flex;
-  align-items: center;
-}
-
 .magazine-images {
-  position: relative;
-  text-align: center;
   height: 160px;
 }
 
@@ -277,14 +197,6 @@ article {
   width: 170px;
 }
 
-.magazine-info {
-  font-weight: bold;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-}
-
-/* IN THE MAGAZINE */
 .mag-cat {
   padding: 0 7px;
   background-color: var(--main-page-color);
@@ -295,8 +207,6 @@ article {
 .cat {
   color: var(--main-page-color);
 }
-
-/* CATEGORY ITEMS */
 
 .article-category {
   color: var(--main-page-color);
