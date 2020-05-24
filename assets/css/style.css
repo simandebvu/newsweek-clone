@@ -104,8 +104,8 @@ article {
 
 .subs-wrapper {
   background-color: #f4f5f6;
-  padding: 24px 20px 20px;
-  margin: 15px;
+  overflow: hidden;
+  max-height: 235px;
 }
 
 .subscribe-title {
@@ -209,7 +209,7 @@ article {
 }
 
 .magazine-images img {
-  height: 228px;
+  height: 200px;
   width: 170px;
 }
 
