@@ -95,7 +95,7 @@ article {
   text-transform: uppercase;
 }
 
-.opinion-item{
+.opinion-item {
   padding-top: 14px;
   padding-bottom: 14px;
   border-top: 1px solid #ddd;
@@ -181,7 +181,7 @@ article {
 
 .block-title {
   border-top: 1px solid #d9d9d9;
-  color: #f72210;
+  color: var(--main-page-color);
   padding-top: 25px;
   font-size: 22px;
   line-height: 22px;
@@ -284,6 +284,10 @@ li.borderless { border-top: 0 none; }
 .fab,
 .footer-links a {
   color: #000;
+}
+
+.copyright {
+  font-size: 14px;
 }
 
 @media (min-width: 768px) {
