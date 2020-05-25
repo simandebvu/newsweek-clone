@@ -15,71 +15,95 @@
 </head>
 
 <body>
-   <!-- Navigation -->
-   <nav class="navbar navbar-expand-lg py-3 navbar-dark px-0 sticky-top">
-      <div class="container-fluid nav-wrapper py-1">
-         <div class="d-none d-lg-block text-white">Wed, May 20, 2020</div>
-         <div class="">
-            <a href="#" class="navbar-brand"><img class="mx-auto d-block" src="./assets/img/news-logo.svg"
-                  alt="Newsweek Logo"></a>
+   <div class="container-fluid">
+      <header class="row px-sm-0 px-lg-3">
+         <!-- Navigation -->
+         <nav class=" navbar w-100 navbar-expand-lg navbar-dark px-0 sticky-top text-dark">
+            <div class="container-fluid nav-wrapper py-1">
+               <div class="row w-100">
+                  <div class=" col-sm-0 col-md-0 col-lg-4 d-none d-lg-block align-self-end">
+                     <div class="header-weather d-flex align-items-center">
+                        <a href="#" class="d-flex align-items-center  text-white">
+                            <img alt="Cloudy Weather" class="weather-icon" src="assets/img/clouds.webp">
+                            &nbsp;17°&nbsp;
+                            <span class="d-md-inline d-none">
+                                <span class="">Malthe, IT&nbsp;</span>
+                            </span>
+                        </a>
+                    </div>
+                     <div class="text-white">Wed, May 20, 2020</div>
+                  </div>
+                  <div class="col-sm-8 col-md-8 col-lg-4 w-50 d-flex justify-content-start">
+                     <a href="#" class="navbar-brand mx-1"><img class="mx-auto" src="./assets/img/news-logo.svg"
+                           alt="Newsweek Logo"></a>
+                  </div>
+                  <div class="col-sm-4 col-md-4 col-lg-4 w-50 align-self-end d-flex justify-content-end pr-0 pr-sm-2">
+                     <button
+                        class="btn nav-link d-inline nav-button login-button p-0 px-md-3 text-white text-decoration-none bg-transparent mr-1 text-uppercase font-weight-bold">Log
+                        in</button>
+                     <button
+                        class="btn nav-link d-inline nav-button sub-button p-0 px-md-3 rounded-0 bg-white text-uppercase font-weight-bold">Subscribe</button>
+                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                     </button>
+                  </div>
+               </div>
+            </div>
+         </nav>
+      </header>
+
+      <nav class="navbar col-sm-12 col-md-12 col-lg-12 secondary-nav navbar-expand-lg bg-white pt-0">
+         <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav d-flex justify-content-between w-100 align-items-baseline px-lg-3">
+               <li class="nav-item">
+                  <a class="secondary-nav-link border-right nav-link font-weight-bold" href="#">U.S.</a>
+               </li>
+               <li class="nav-item text-dark">
+                  <a class="secondary-nav-link border-right nav-link font-weight-bold" href="#">World</a>
+               </li>
+               <li class="nav-item text-dark">
+                  <a class="secondary-nav-link border-right nav-link font-weight-bold" href="#">Business </a>
+               </li>
+               <li class="nav-item text-dark">
+                  <a class="secondary-nav-link border-right nav-link font-weight-bold" href="#">Tech & Science</a>
+               </li>
+               <li class="nav-item text-dark">
+                  <a class="secondary-nav-link border-right nav-link font-weight-bold" href="#">Culture</a>
+               </li>
+               <li class="nav-item text-dark">
+                  <a class="secondary-nav-link border-right nav-link font-weight-bold text-capitalize"
+                     href="#">Newsgeek</a>
+               </li>
+               <li class="nav-item text-dark">
+                  <a class="secondary-nav-link border-right nav-link font-weight-bold text-capitalize"
+                     href="#">Sports</a>
+               </li>
+               <li class="nav-item text-dark">
+                  <a class="secondary-nav-link border-right nav-link font-weight-bold text-capitalize"
+                     href="#">Health</a>
+               </li>
+               <li class="nav-item text-dark">
+                  <a class="secondary-nav-link border-right nav-link font-weight-bold text-capitalize" href="#">The
+                     Debate</a>
+               </li>
+               <li class="nav-item text-dark">
+                  <a class="secondary-nav-link border-right nav-link font-weight-bold text-capitalize"
+                     href="#">Vantage</a>
+               </li>
+               <li class="nav-item text-dark">
+                  <a class="secondary-nav-link nav-link font-weight-bold text-capitalize" href="#">Weather</a>
+               </li>
+               <li class="d-flex flex-row align-items-center p-4"><input type="text" placeholder="Search"><span
+                     class="material-icons">search</span></li>
+            </ul>
+            <div class="nav-top"></div>
          </div>
-         <div class="d-flex">
-            <button class="btn nav-link d-inline nav-button login-button p-0 px-md-3">Log in</button>
-            <button class="btn nav-link d-inline nav-button sub-button p-0 px-md-3">Subscribe</button>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-               aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button>
-         </div>
-      </div>
-   </nav>
+      </nav>
 
-   <nav class="navbar secondary-nav navbar-expand-lg navbar-light bg-light py-0 ">
-      <div class="collapse navbar-collapse" id="navbarNav">
-         <ul class="navbar-nav d-flex justify-content-between w-100 align-items-baseline">
-            <li class="nav-item">
-               <a class="border-right nav-link" href="#">US </a>
-            </li>
-            <li class="nav-item">
-               <a class="border-right nav-link" href="#">WORLD </a>
-            </li>
-            <li class="nav-item">
-               <a class="border-right nav-link" href="#">BUSINESS </a>
-            </li>
-            <li class="nav-item">
-               <a class="border-right nav-link" href="#">TECH AND SCIENCE </a>
-            </li>
-            <li class="nav-item">
-               <a class="border-right nav-link" href="#">CULTURE </a>
-            </li>
-            <li class="nav-item">
-               <a class="border-right nav-link" href="#">NEWSGEEK </a>
-            </li>
-            <li class="nav-item">
-               <a class="border-right nav-link" href="#">SPORTS </a>
-            </li>
-            <li class="nav-item">
-               <a class="border-right nav-link" href="#">HEALTH </a>
-            </li>
-            <li class="nav-item">
-               <a class="border-right nav-link" href="#">THE DEBATE </a>
-            </li>
-            <li class="nav-item">
-               <a class="border-right nav-link" href="#">VANTAGE </a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="#">WEATHER </a>
-            </li>
-            <li class="d-flex flex-row align-items-center p-3"><input type="text" placeholder="Search"><span
-                  class="material-icons">search</span></li>
+      <!-- Navigation End -->
 
-         </ul>
-      </div>
-   </nav>
 
-   <!-- Navigation End -->
-
-   <div class="container-fluid mx-0">
       <div class="row">
          <!-- Top Story -->
          <div class="col-sm-12 col-md-7 col-lg-6 order-sm-0 order-md-1 order-lg-1 main-view">
@@ -87,23 +111,24 @@
             <div class="top-story">
                <div class="story-header">
                   <a href="#">
-                     <h6 class="article-category bold-text">WORLD</h6>
+                     <h6 class="article-category font-weight-bold">WORLD</h6>
                   </a>
                   <a href="#"><img src="./assets/img/russia-covid-china.webp" class="article-image"
                         alt="featured-story" /></a>
                </div>
                <div class="top-story-info">
-                  <a class="article-link" href="#">
-                     <h3 class="bold-text">Russia Opposes Any 'Mock' Coronavirus Trial of WHO, China: Senate Speaker
+                  <a class="article-link text-dark" href="#">
+                     <h3 class=" font-weight-bold">Russia Opposes Any 'Mock' Coronavirus Trial of WHO, China: Senate
+                        Speaker
                      </h3>
                   </a>
-                  <p> Valentina Matviyenko praised both the World Health Organization and China for their
+                  <p class="pt-3"> Valentina Matviyenko praised both the World Health Organization and China for their
                      work in trying to slow the worldwide spread of the virus.</p>
                </div>
             </div>
             <!-- Heroes of the pandemic -->
             <section class="heroes-section order-sm-8">
-               <h3 class="col-title">HEROES OF THE PANDEMIC</h3>
+               <h3 class="col-title text-uppercase">Lorem ipsum dolor sit.</h3>
                <div class="row">
                   <article class="col-md-4 story-item">
                      <div class="story-header">
@@ -114,7 +139,8 @@
                               alt="featured-story" /></a>
                      </div>
                      <div class="story-summary">
-                        <a href="#" class="link-no-deco">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur officia sequi.</a>
+                        <a href="#" class="link-no-deco text-dark">Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit. Distinctio consequuntur officia sequi.</a>
                      </div>
                   </article>
                   <article class="col-md-4 story-item">
@@ -126,7 +152,8 @@
                               alt="featured-story" /></a>
                      </div>
                      <div class="story-summary">
-                        <a href="#" class="link-no-deco">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur officia sequi.</a>
+                        <a href="#" class="link-no-deco text-dark">Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit. Distinctio consequuntur officia sequi.</a>
                      </div>
                   </article>
                   <article class="col-md-4 story-item">
@@ -138,7 +165,8 @@
                               alt="featured-story" /></a>
                      </div>
                      <div class="story-summary">
-                        <a href="#" class="link-no-deco">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur officia sequi.</a>
+                        <a href="#" class="link-no-deco text-dark">Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit. Distinctio consequuntur officia sequi.</a>
                      </div>
                   </article>
                </div>
@@ -147,7 +175,7 @@
 
             <!-- Culture and travel -->
             <section class="culture-section">
-               <h5 class="col-title">CULTURE AND TRAVEL</h5>
+               <h5 class="col-title text-uppercase">Lorem, ipsum dolor.</h5>
                <div class="row">
                   <article class="col-md-4 story-item">
                      <div class="story-header">
@@ -158,7 +186,8 @@
                               alt="featured-story" /></a>
                      </div>
                      <div class="story-summary">
-                        <a href="#" class="link-no-deco">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur officia sequi.</a>
+                        <a href="#" class="link-no-deco text-dark">Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit. Distinctio consequuntur officia sequi.</a>
                      </div>
                   </article>
                   <article class="col-md-4 story-item">
@@ -170,7 +199,8 @@
                               alt="featured-story" /></a>
                      </div>
                      <div class="story-summary">
-                        <a href="#" class="link-no-deco">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur officia sequi.</a>
+                        <a href="#" class="link-no-deco text-dark">Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit. Distinctio consequuntur officia sequi.</a>
                      </div>
                   </article>
                   <article class="col-md-4 story-item">
@@ -182,7 +212,8 @@
                               alt="featured-story" /></a>
                      </div>
                      <div class="story-summary">
-                        <a href="#" class="link-no-deco">Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio consequuntur officia sequi.</a>
+                        <a href="#" class="link-no-deco text-dark">Lorem ipsum dolor sit amet consectetur adipisicing
+                           elit. Distinctio consequuntur officia sequi.</a>
                      </div>
                   </article>
                </div>
@@ -190,11 +221,12 @@
             <!-- Culture and travel end-->
 
             <!-- More Stories -->
-            <div class="col-title pt-4">MORE STORIES</div>
+            <div class="col-title pt-4 text-uppercase">Lorem, ipsum.
+            </div>
             <div>
-               <ul class="opinion-items px-0 list-group list-group-flush">
-                  <li class="list-group-item opinion-item pt-1">
-                     <a href="#"><img src="https://picsum.photos/100/100" alt="debater-image"></a>
+               <ul class="opinion-items px-0 list-group list-group-flush d-flex align-items-center p-2 p-lg-0">
+                  <li class="w-100 list-group-item opinion-item pt-1 d-flex align-items-center p-sm-2 p-md-0">
+                     <a href="#"><img class="mr-1" src="https://picsum.photos/100/100" alt="debater-image"></a>
                      <div class="more-stories-item">
                         <h5>Lorem ipsum dolor sit amet.</h5>
                         <small>
@@ -202,8 +234,8 @@
                         </small>
                      </div>
                   </li>
-                  <li class="list-group-item opinion-item pt-1">
-                     <a href="#"><img src="https://picsum.photos/100/100" alt="debater-image"></a>
+                  <li class="w-100 list-group-item opinion-item pt-1 d-flex align-items-center p-sm-2 p-md-0">
+                     <a href="#"><img class="mr-1" src="https://picsum.photos/100/100" alt="debater-image"></a>
                      <div class="more-stories-item">
                         <h5>Lorem ipsum dolor sit amet.</h5>
                         <small>
@@ -211,8 +243,8 @@
                         </small>
                      </div>
                   </li>
-                  <li class="list-group-item opinion-item pt-1">
-                     <a href="#"><img src="https://picsum.photos/100/100" alt="debater-image"></a>
+                  <li class="w-100 list-group-item opinion-item pt-1 d-flex align-items-center p-sm-2 p-md-0">
+                     <a href="#"><img class="mr-1" src="https://picsum.photos/100/100" alt="debater-image"></a>
                      <div class="more-stories-item">
                         <h5>Lorem ipsum dolor sit amet.</h5>
                         <small>
@@ -220,8 +252,8 @@
                         </small>
                      </div>
                   </li>
-                  <li class="list-group-item opinion-item pt-1">
-                     <a href="#"><img src="https://picsum.photos/100/100" alt="debater-image"></a>
+                  <li class="w-100 list-group-item opinion-item pt-1 d-flex align-items-center p-sm-2 p-md-0">
+                     <a href="#"><img class="mr-1" src="https://picsum.photos/100/100" alt="debater-image"></a>
                      <div class="more-stories-item">
                         <h5>Lorem ipsum dolor sit amet.</h5>
                         <small>
@@ -229,8 +261,8 @@
                         </small>
                      </div>
                   </li>
-                  <li class="list-group-item opinion-item pt-1">
-                     <a href="#"><img src="https://picsum.photos/100/100" alt="debater-image"></a>
+                  <li class="w-100 list-group-item opinion-item pt-1 d-flex align-items-center p-sm-2 p-md-0">
+                     <a href="#"><img class="mr-1" src="https://picsum.photos/100/100" alt="debater-image"></a>
                      <div class="more-stories-item">
                         <h5>Lorem ipsum dolor sit amet.</h5>
                         <small>
@@ -238,8 +270,8 @@
                         </small>
                      </div>
                   </li>
-                  <li class="list-group-item opinion-item pt-1">
-                     <a href="#"><img src="https://picsum.photos/100/100" alt="debater-image"></a>
+                  <li class="w-100 list-group-item opinion-item pt-1 d-flex align-items-center p-sm-2 p-md-0">
+                     <a href="#"><img class="mr-1" src="https://picsum.photos/100/100" alt="debater-image"></a>
                      <div class="more-stories-item">
                         <h5>Lorem ipsum dolor sit amet.</h5>
                         <small>
@@ -247,8 +279,8 @@
                         </small>
                      </div>
                   </li>
-                  <li class="list-group-item opinion-item pt-1">
-                     <a href="#"><img src="https://picsum.photos/100/100" alt="debater-image"></a>
+                  <li class="w-100 list-group-item opinion-item pt-1 d-flex align-items-center p-sm-2 p-md-0">
+                     <a href="#"><img class="mr-1" src="https://picsum.photos/100/100" alt="debater-image"></a>
                      <div class="more-stories-item">
                         <h5>Lorem ipsum dolor sit amet.</h5>
                         <small>
@@ -256,8 +288,8 @@
                         </small>
                      </div>
                   </li>
-                  <li class="list-group-item opinion-item pt-1">
-                     <a href="#"><img src="https://picsum.photos/100/100" alt="debater-image"></a>
+                  <li class="w-100 list-group-item opinion-item pt-1 d-flex align-items-center p-sm-2 p-md-0">
+                     <a href="#"><img class="mr-1" src="https://picsum.photos/100/100" alt="debater-image"></a>
                      <div class="more-stories-item">
                         <h5>Lorem ipsum dolor sit amet.</h5>
                         <small>
@@ -274,7 +306,7 @@
          <!-- Featured Stories -->
          <aside class="col-sm-12 col-md-5 col-lg-3 order-sm-1 order-md-0 featured-stories border-before mt-sm-4 mt-md-0 order-lg-0 
          ">
-            <div class="col-title">FEATURED STORIES</div>
+            <div class="col-title text-uppercase">Lorem, ipsum.</div>
             <div class="content">
                <article>
                   <div class="wrap"></div>
@@ -285,8 +317,47 @@
                      <a href="#"><img src="./assets/img/gary-arbery.webp" class="article-image"
                            alt="featured-story" /></a>
                   </div>
-                  <a class="article-link" href="#">
-                     <h3 class="bold-text">In Arbery Shooting, George Zimmerman-Style Defense May Resonate With Jurors
+                  <a class="article-link text-dark" href="#">
+                     <h3 class=" font-weight-bold">In Arbery Shooting, George Zimmerman-Style Defense May Resonate With
+                        Jurors
+                     </h3>
+                  </a>
+                  <div class="summary">
+                     The killers of Georgia jogger Ahmaud Arbery may claim self-defense. An earlier case-—and a local
+                     prosecutor's memo—may provide defense fodder.
+                  </div>
+               </article>
+               <article>
+                  <div class="wrap"></div>
+                  <div class="story-header">
+                     <a href="#">
+                        <h6 class="article-category">LATEST</h6>
+                     </a>
+                     <a href="#"><img src="./assets/img/gary-arbery.webp" class="article-image"
+                           alt="featured-story" /></a>
+                  </div>
+                  <a class="article-link text-dark" href="#">
+                     <h3 class=" font-weight-bold">In Arbery Shooting, George Zimmerman-Style Defense May Resonate With
+                        Jurors
+                     </h3>
+                  </a>
+                  <div class="summary">
+                     The killers of Georgia jogger Ahmaud Arbery may claim self-defense. An earlier case-—and a local
+                     prosecutor's memo—may provide defense fodder.
+                  </div>
+               </article>
+               <article>
+                  <div class="wrap"></div>
+                  <div class="story-header">
+                     <a href="#">
+                        <h6 class="article-category">LATEST</h6>
+                     </a>
+                     <a href="#"><img src="./assets/img/gary-arbery.webp" class="article-image"
+                           alt="featured-story" /></a>
+                  </div>
+                  <a class="article-link text-dark" href="#">
+                     <h3 class=" font-weight-bold">In Arbery Shooting, George Zimmerman-Style Defense May Resonate With
+                        Jurors
                      </h3>
                   </a>
                   <div class="summary">
@@ -298,20 +369,22 @@
          </aside>
          <!-- Featured Stories End -->
 
-         <aside class="col-sm-12 col-lg-3 order-sm-2 order-md-2 order-lg-2">
+         <aside class="col-sm-12 col-lg-3 order-sm-2 order-sm-3 order-md-2 order-lg-2">
             <!-- The Debate -->
             <div class=" px-0 mx-md-auto border-before the-debate">
                <div class="col-title">THE DEBATE</div>
-               <div class="debate-side debate-side-1 justify-content-md-center">
+               <div class="debate-side debate-side-1 justify-content-md-center d-flex align-items-center p-2">
                   <a href="#"><img src="./assets/img/caroline-glick.png" class="rounded-image-small"
                         alt="debater-image"></a>
-                  <a href="#" class="link-no-deco">Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace</a>
+                  <a href="#" class="link-no-deco text-dark">Israeli Sovereignty, Not Appeasement, Is the Key to Lasting
+                     Peace</a>
                </div>
-               <div class="debate-versus">VS</div>
-               <div class="debate-side debate-side-2 justify-content-md-center">
+               <div class="debate-versus ">VS</div>
+               <div class="debate-side debate-side-2 justify-content-md-center d-flex align-items-center p-2">
                   <a href="#"><img src="https://picsum.photos/63/63" class="rounded-image-small"
                         alt="debater-image"></a>
-                  <a href="#" class="link-no-deco">Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace</a>
+                  <a href="#" class="link-no-deco text-dark">Israeli Sovereignty, Not Appeasement, Is the Key to Lasting
+                     Peace</a>
                </div>
                <!-- ......The Debate ends -->
             </div>
@@ -320,36 +393,39 @@
                <div class="col-title pt-4 ">OPINION</div>
 
                <ul class="opinion-items px-0 list-group list-group-flush  justify-content-md-center">
-                  <li class="list-group-item opinion-item">
+                  <li class="list-group-item opinion-item d-flex align-items-center p-2">
                      <a href="#"><img src="https://picsum.photos/100/100" class="rounded-image-small"
                            alt="debater-image"></a>
-                     <a href="#" class="link-deco"> Israeli Sovereignty, Not Appeasement, Is the Key to Lasting
+                     <a href="#" class="link-deco text-dark"> Israeli Sovereignty, Not Appeasement, Is the Key to
+                        Lasting
                         Peace</a>
                   </li>
-                  <li class="list-group-item opinion-item">
+                  <li class="list-group-item opinion-item d-flex align-items-center p-2">
                      <a href="#"><img src="https://picsum.photos/100/100" class="rounded-image-small"
                            alt="debater-image"></a>
-                     <a href="#" class="link-deco"> Israeli Sovereignty, Not Appeasement, Is the Key to Lasting
+                     <a href="#" class="link-deco text-dark"> Israeli Sovereignty, Not Appeasement, Is the Key to
+                        Lasting
                         Peace</a>
                   </li>
-                  <li class="list-group-item opinion-item">
+                  <li class="list-group-item opinion-item d-flex align-items-center p-2">
                      <a href="#"><img src="https://picsum.photos/100/100" class="rounded-image-small"
                            alt="debater-image"></a>
-                     <a href="#" class="link-deco">Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace</a>
+                     <a href="#" class="link-deco text-dark">Israeli Sovereignty, Not Appeasement, Is the Key to Lasting
+                        Peace</a>
                   </li>
                </ul>
             </div>
             <!-- Subscribe -->
-            <div class="py-3 px-md-5 px-lg-0 mx-md-auto">
+            <div class="py-3 px-md-5 px-lg-0 mx-md-auto col-md-6 col-lg-12">
                <div class="card-header">
-                  <div class="magazine-header pt-2">
+                  <div class="magazine-header pt-2 d-flex justify-content-center font-weight-bold">
                      <span class="icon-n"></span>
                      START YOUR DAY WITH OUR TOP 5 ARTICLES
                   </div>
                   <div class="form-group">
                      <input type="email" class="form-control" placeholder="Enter email">
                   </div>
-                  <button type="button" class="btn btn-danger btn-lg btn-block">FREE SIGN UP ></button>
+                  <button type="button" class="btn btn-red text-white btn-block">FREE SIGN UP ></button>
                </div>
             </div>
             <!-- End Subscribe -->
@@ -357,9 +433,9 @@
          </aside>
       </div>
 
-      <div class="row row-eq-height">
+      <div class="row row-eq-height order-sm-2 ">
          <!-- In the magazine -->
-         <div class="magazine-header pt-3 mx-auto w-100">
+         <div class="magazine-header pt-3 mx-auto w-100 d-flex justify-content-center font-weight-bold">
             <span class="icon-n"></span>
             <h3>IN THE MAGAZINE</h3>
          </div>
@@ -387,10 +463,11 @@
             </div>
             <div class="magazine-buttons pt-2">
                <span class="mag-cat ">lorem</span>
-               <a href="#" class="link-no-deco"><span class="cat">lorem</span></a>
+               <a href="#" class="link-no-deco text-dark"><span class="cat">lorem</span></a>
             </div>
 
-            <div class="feature-summary pt-1"><a class="article-link" href="#">Lorem ipsum dolor sit amet consectetur
+            <div class="feature-summary pt-1"><a class="article-link text-dark" href="#">Lorem ipsum dolor sit amet
+                  consectetur
                   adipisicing elit. Libero ut quia
                   enim!</a></div>
          </div>
@@ -402,10 +479,11 @@
             </div>
             <div class="magazine-buttons pt-2">
                <span class="mag-cat ">lorem</span>
-               <a href="#" class="link-no-deco"><span class="cat">lorem</span></a>
+               <a href="#" class="link-no-deco text-dark"><span class="cat">lorem</span></a>
             </div>
 
-            <div class="feature-summary pt-1"><a class="article-link" href="#">Lorem ipsum dolor sit amet consectetur
+            <div class="feature-summary pt-1"><a class="article-link text-dark" href="#">Lorem ipsum dolor sit amet
+                  consectetur
                   adipisicing elit. Libero ut quia
                   enim!</a></div>
          </div>
@@ -417,10 +495,11 @@
             </div>
             <div class="magazine-buttons pt-2">
                <span class="mag-cat ">lorem</span>
-               <a href="#" class="link-no-deco"><span class="cat">lorem</span></a>
+               <a href="#" class="link-no-deco text-dark"><span class="cat">lorem</span></a>
             </div>
 
-            <div class="feature-summary pt-1"><a class="article-link" href="#">Lorem ipsum dolor sit amet consectetur
+            <div class="feature-summary pt-1"><a class="article-link text-dark" href="#">Lorem ipsum dolor sit amet
+                  consectetur
                   adipisicing elit. Libero ut quia
                   enim!</a></div>
          </div>
@@ -432,10 +511,11 @@
             </div>
             <div class="magazine-buttons pt-2">
                <span class="mag-cat ">lorem</span>
-               <a href="#" class="link-no-deco"><span class="cat">lorem</span></a>
+               <a href="#" class="link-no-deco text-dark"><span class="cat">lorem</span></a>
             </div>
 
-            <div class="feature-summary pt-1"><a class="article-link" href="#">Lorem ipsum dolor sit amet consectetur
+            <div class="feature-summary pt-1"><a class="article-link text-dark" href="#">Lorem ipsum dolor sit amet
+                  consectetur
                   adipisicing elit. Libero ut quia
                   enim!</a></div>
          </div>
@@ -447,10 +527,11 @@
             </div>
             <div class="magazine-buttons pt-2">
                <span class="mag-cat ">lorem</span>
-               <a href="#" class="link-no-deco"><span class="cat">lorem</span></a>
+               <a href="#" class="link-no-deco text-dark"><span class="cat">lorem</span></a>
             </div>
 
-            <div class="feature-summary pt-1"><a class="article-link" href="#">Lorem ipsum dolor sit amet consectetur
+            <div class="feature-summary pt-1"><a class="article-link text-dark" href="#">Lorem ipsum dolor sit amet
+                  consectetur
                   adipisicing elit. Libero ut quia
                   enim!</a></div>
          </div>
@@ -462,10 +543,11 @@
             </div>
             <div class="magazine-buttons pt-2">
                <span class="mag-cat ">lorem</span>
-               <a href="#" class="link-no-deco"><span class="cat">lorem</span></a>
+               <a href="#" class="link-no-deco text-dark"><span class="cat">lorem</span></a>
             </div>
 
-            <div class="feature-summary pt-1"><a class="article-link" href="#">Lorem ipsum dolor sit amet consectetur
+            <div class="feature-summary pt-1"><a class="article-link text-dark" href="#">Lorem ipsum dolor sit amet
+                  consectetur
                   adipisicing elit. Libero ut quia
                   enim!</a></div>
          </div>
@@ -477,10 +559,11 @@
             </div>
             <div class="magazine-buttons pt-2">
                <span class="mag-cat ">lorem</span>
-               <a href="#" class="link-no-deco"><span class="cat">lorem</span></a>
+               <a href="#" class="link-no-deco text-dark"><span class="cat">lorem</span></a>
             </div>
 
-            <div class="feature-summary pt-1"><a class="article-link" href="#">Lorem ipsum dolor sit amet consectetur
+            <div class="feature-summary pt-1"><a class="article-link text-dark" href="#">Lorem ipsum dolor sit amet
+                  consectetur
                   adipisicing elit. Libero ut quia
                   enim!</a></div>
          </div>
@@ -489,7 +572,7 @@
 
       <div class="row">
          <!-- Editors Pics -->
-         <div class="magazine-header pt-3 mx-auto w-100">
+         <div class="magazine-header pt-3 mx-auto w-100  d-flex justify-content-center font-weight-bold">
             <span class="icon-n"></span>
             <h3>EDITOR'S PICK</h3>
          </div>
@@ -505,7 +588,8 @@
                </div>
             </div>
 
-            <div class="feature-summary pt-1"><a class="article-link" href="#">Lorem ipsum dolor sit amet consectetur
+            <div class="feature-summary pt-1"><a class="article-link text-dark" href="#">Lorem ipsum dolor sit amet
+                  consectetur
                   adipisicing elit. Libero ut quia
                   enim!</a></div>
             <div class="feature-intro">
@@ -524,7 +608,8 @@
                </div>
             </div>
 
-            <div class="feature-summary pt-1"><a class="article-link" href="#">Lorem ipsum dolor sit amet consectetur
+            <div class="feature-summary pt-1"><a class="article-link text-dark" href="#">Lorem ipsum dolor sit amet
+                  consectetur
                   adipisicing elit. Libero ut quia
                   enim!</a></div>
             <div class="feature-intro">
@@ -542,7 +627,8 @@
                </div>
             </div>
 
-            <div class="feature-summary pt-1"><a class="article-link" href="#">Lorem ipsum dolor sit amet consectetur
+            <div class="feature-summary pt-1"><a class="article-link text-dark" href="#">Lorem ipsum dolor sit amet
+                  consectetur
                   adipisicing elit. Libero ut quia
                   enim!</a></div>
             <div class="feature-intro">
@@ -561,7 +647,87 @@
                </div>
             </div>
 
-            <div class="feature-summary pt-1"><a class="article-link" href="#">Lorem ipsum dolor sit amet consectetur
+            <div class="feature-summary pt-1"><a class="article-link text-dark" href="#">Lorem ipsum dolor sit amet
+                  consectetur
+                  adipisicing elit. Libero ut quia
+                  enim!</a></div>
+            <div class="feature-intro">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit alias quidem
+               omnis earum, vitae quod amet quasi quo nesciunt.
+            </div>
+         </article>
+
+         <article class="features-item col-lg-3 col-md-6">
+            <div class="story-item">
+               <div class="story-header">
+                  <a href="#">
+                     <h6 class="article-category">TRAVEL</h6>
+                  </a>
+                  <a href="#"><img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" /></a>
+               </div>
+            </div>
+
+            <div class="feature-summary pt-1"><a class="article-link text-dark" href="#">Lorem ipsum dolor sit amet
+                  consectetur
+                  adipisicing elit. Libero ut quia
+                  enim!</a></div>
+            <div class="feature-intro">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit alias quidem
+               omnis earum, vitae quod amet quasi quo nesciunt.
+            </div>
+         </article>
+         <article class="features-item col-lg-3 col-md-6">
+            <div class="story-item">
+               <div class="story-header">
+                  <a href="#">
+                     <h6 class="article-category">TRAVEL</h6>
+                  </a>
+                  <a href="#"> <img src="https://picsum.photos/200/100" class="article-image"
+                        alt="featured-story" /></a>
+               </div>
+            </div>
+
+            <div class="feature-summary pt-1"><a class="article-link text-dark" href="#">Lorem ipsum dolor sit amet
+                  consectetur
+                  adipisicing elit. Libero ut quia
+                  enim!</a></div>
+            <div class="feature-intro">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit alias quidem
+               omnis earum, vitae quod amet quasi quo nesciunt.
+            </div>
+         </article>
+         <article class="features-item col-lg-3 col-md-6">
+            <div class="story-item">
+               <div class="story-header">
+                  <a href="#">
+                     <h6 class="article-category">TRAVEL</h6>
+                  </a>
+                  <a href="#"><img src="https://picsum.photos/200/100" class="article-image" alt="featured-story" /></a>
+               </div>
+            </div>
+
+            <div class="feature-summary pt-1"><a class="article-link text-dark" href="#">Lorem ipsum dolor sit amet
+                  consectetur
+                  adipisicing elit. Libero ut quia
+                  enim!</a></div>
+            <div class="feature-intro">
+               Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur reprehenderit alias quidem
+               omnis earum, vitae quod amet quasi quo nesciunt.
+            </div>
+         </article>
+         <article class="features-item col-lg-3 col-md-6">
+            <div class="story-item">
+               <div class="story-header">
+                  <a href="#">
+                     <h6 class="article-category">TRAVEL</h6>
+                  </a>
+                  <a href="#"> <img src="https://picsum.photos/200/100" class="article-image"
+                        alt="featured-story" /></a>
+               </div>
+            </div>
+
+            <div class="feature-summary pt-1"><a class="article-link text-dark" href="#">Lorem ipsum dolor sit amet
+                  consectetur
                   adipisicing elit. Libero ut quia
                   enim!</a></div>
             <div class="feature-intro">
@@ -576,8 +742,8 @@
       <!-- US -->
       <section class="us">
          <h2 class="block-title">US</h2>
-         <div class="row">
-            <div class="features-item col-md-4">
+         <div class="row d-flex align-items-start mx-md-1">
+            <div class="features-item col-sm-12 col-md-6 col-lg-4">
                <div class="story-item">
                   <div class="story-header">
                      <a href="#"> <img src="https://picsum.photos/200/100" class="article-image"
@@ -585,12 +751,13 @@
                   </div>
                </div>
 
-               <div class="feature-summary pt-1"><a class="article-link" href="#">Lorem ipsum dolor sit amet consectetur
+               <div class="feature-summary pt-1"><a class="article-link text-dark" href="#">Lorem ipsum dolor sit amet
+                     consectetur
                      adipisicing elit. Libero ut quia
                      enim!</a></div>
             </div>
 
-            <div class="features-item col-md-4">
+            <div class="features-item col-sm-12 col-md-6 col-lg-4">
                <div class="story-item">
                   <div class="story-header">
                      <a href="#"> <img src="https://picsum.photos/200/100" class="article-image"
@@ -598,43 +765,38 @@
                   </div>
                </div>
 
-               <div class="feature-summary pt-1"><a class="article-link" href="#">Lorem ipsum dolor sit amet consectetur
+               <div class="feature-summary pt-1"><a class="article-link text-dark" href="#">Lorem ipsum dolor sit amet
+                     consectetur
                      adipisicing elit. Libero ut quia
                      enim!</a></div>
             </div>
 
-            <ul class="opinion-items px-0 list-group list-group-flush py-sm-3  py-lg-0 col-md-4">
-               <li class="list-group-item opinion-item pt-sm-1">
-                  <img src="https://picsum.photos/100/100" alt="debater-image">
+            <ul class="opinion-items col-md-12 pl-md-2 col-lg-4 px-0 list-group list-group-flush py-lg-0">
+               <li class="list-group-item opinion-item pt-1 d-flex align-items-center p-2 borderless pt-md-0">
+                  <a href="#"><img src="https://picsum.photos/100/100" alt="debater-image"></a>
                   <div class="more-stories-item">
                      <a href="#" class="link-deco">
-                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <h5 class="secondary-nav-link">Lorem ipsum dolor sit amet.</h5>
                      </a>
                      <small>
                         Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
                      </small>
                   </div>
                </li>
-               <li class="list-group-item opinion-item pt-1">
-                  <img src="https://picsum.photos/100/100" alt="debater-image">
+               <li class="list-group-item opinion-item pt-1 d-flex align-items-center p-2">
+                  <a href="#"><img src="https://picsum.photos/100/100" alt="debater-image"></a>
                   <div class="more-stories-item">
                      <a href="#" class="link-deco">
-                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <h5 class="secondary-nav-link">Lorem ipsum dolor sit amet.</h5>
                      </a>
-                     <small>
-                        Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
-                     </small>
                   </div>
                </li>
-               <li class="list-group-item opinion-item pt-1">
-                  <img src="https://picsum.photos/100/100" alt="debater-image">
+               <li class="list-group-item opinion-item pt-1 d-flex align-items-center p-2">
+                  <a href="#"><img src="https://picsum.photos/100/100" alt="debater-image"></a>
                   <div class="more-stories-item">
                      <a href="#" class="link-deco">
-                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <h5 class="secondary-nav-link">Lorem ipsum dolor sit amet.</h5>
                      </a>
-                     <small>
-                        Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
-                     </small>
                   </div>
                </li>
             </ul>
@@ -646,8 +808,8 @@
       <section class="world">
          <h2 class="block-title">WORLD</h2>
 
-         <div class="row mt-lg-3">
-            <div class="features-item col-md-4">
+         <div class="row mt-lg-3 mx-md-1">
+            <div class="features-item col-md-6  col-sm-12 col-md-6  col-lg-4">
                <div class="story-item">
                   <div class="story-header">
                      <a href="#"> <img src="https://picsum.photos/200/100" class="article-image"
@@ -655,12 +817,13 @@
                   </div>
                </div>
 
-               <div class="feature-summary pt-1"><a class="article-link" href="#">Lorem ipsum dolor sit amet consectetur
+               <div class="feature-summary pt-1"><a class="article-link text-dark" href="#">Lorem ipsum dolor sit amet
+                     consectetur
                      adipisicing elit. Libero ut quia
                      enim!</a></div>
             </div>
 
-            <div class="features-item col-md-4">
+            <div class="features-item  col-sm-12 col-md-6  col-lg-4">
                <div class="story-item">
                   <div class="story-header">
                      <a href="#"><img src="https://picsum.photos/200/100" class="article-image"
@@ -668,37 +831,44 @@
                   </div>
                </div>
 
-               <div class="feature-summary pt-1"><a class="article-link" href="#">Lorem ipsum dolor sit amet consectetur
+               <div class="feature-summary pt-1"><a class="article-link text-dark" href="#">Lorem ipsum dolor sit amet
+                     consectetur
                      adipisicing elit. Libero ut quia
                      enim!</a></div>
             </div>
 
-            <ul class="opinion-items px-0 list-group list-group-flush  col-md-4 py-sm-3  py-lg-0">
-               <li class="list-group-item opinion-item pt-1">
-                  <a href="#"><img src="https://picsum.photos/100/100" alt="debater-image"></a>
+            <ul class="opinion-items px-0 list-group pl-md-2 col-lg-4 list-group-flush py-lg-0 col-md-12">
+               <li class="list-group-item opinion-item pt-sm-1 d-flex align-items-center p-2 borderless pt-md-0">
+                  <img src="https://picsum.photos/100/100" alt="debater-image">
                   <div class="more-stories-item">
                      <a href="#" class="link-deco">
-                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <h5 class="secondary-nav-link">Lorem ipsum dolor sit amet.</h5>
                      </a>
                      <small>
                         Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
                      </small>
                   </div>
                </li>
-               <li class="list-group-item opinion-item pt-1">
-                  <a href="#"><img src="https://picsum.photos/100/100" alt="debater-image"></a>
+               <li class="list-group-item opinion-item pt-1 d-flex align-items-center p-2">
+                  <img src="https://picsum.photos/100/100" alt="debater-image">
                   <div class="more-stories-item">
                      <a href="#" class="link-deco">
-                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <h5 class="secondary-nav-link">Lorem ipsum dolor sit amet.</h5>
                      </a>
+                     <small>
+                        Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                     </small>
                   </div>
                </li>
-               <li class="list-group-item opinion-item pt-1">
-                  <a href="#"><img src="https://picsum.photos/100/100" alt="debater-image"></a>
+               <li class="list-group-item opinion-item pt-1 d-flex align-items-center p-2">
+                  <img src="https://picsum.photos/100/100" alt="debater-image">
                   <div class="more-stories-item">
                      <a href="#" class="link-deco">
-                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <h5 class="secondary-nav-link">Lorem ipsum dolor sit amet.</h5>
                      </a>
+                     <small>
+                        Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
+                     </small>
                   </div>
                </li>
             </ul>
@@ -709,8 +879,8 @@
       <!-- Business -->
       <section class="business">
          <h2 class="block-title">BUSINESS</h2>
-         <div class="row mt-lg-3">
-            <div class="features-item col-md-4">
+         <div class="row mt-lg-3  mx-md-1">
+            <div class="features-item col-md-6  col-sm-12 col-lg-4">
                <div class="story-item">
                   <div class="story-header">
                      <a href="#"><img src="https://picsum.photos/200/100" class="article-image"
@@ -718,12 +888,13 @@
                   </div>
                </div>
 
-               <div class="feature-summary pt-1"><a class="article-link" href="#">Lorem ipsum dolor sit amet consectetur
+               <div class="feature-summary pt-1"><a class="article-link text-dark" href="#">Lorem ipsum dolor sit amet
+                     consectetur
                      adipisicing elit. Libero ut quia
                      enim!</a></div>
             </div>
 
-            <div class="features-item col-md-4">
+            <div class="features-item col-md-6 col-sm-12 col-lg-4">
                <div class="story-item">
                   <div class="story-header">
                      <a href="#"><img src="https://picsum.photos/200/100" class="article-image"
@@ -731,36 +902,37 @@
                   </div>
                </div>
 
-               <div class="feature-summary pt-1"><a class="article-link" href="#">Lorem ipsum dolor sit amet consectetur
+               <div class="feature-summary pt-1"><a class="article-link text-dark" href="#">Lorem ipsum dolor sit amet
+                     consectetur
                      adipisicing elit. Libero ut quia
                      enim!</a></div>
             </div>
 
-            <ul class="opinion-items col-md-4 px-0 list-group list-group-flush py-sm-3  py-lg-0">
-               <li class="list-group-item opinion-item pt-1">
+            <ul class="opinion-items col-md-12 pl-md-2 col-lg-4 px-0 list-group list-group-flush py-lg-0">
+               <li class="list-group-item opinion-item pt-1 d-flex align-items-center p-2 borderless pt-md-0">
                   <img src="https://picsum.photos/100/100" alt="debater-image">
                   <div class="more-stories-item">
                      <a href="#" class="link-deco">
-                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <h5 class="secondary-nav-link">Lorem ipsum dolor sit amet.</h5>
                      </a>
                   </div>
                </li>
-               <li class="list-group-item opinion-item pt-1">
+               <li class="list-group-item opinion-item pt-1 d-flex align-items-center p-2">
                   <img src="https://picsum.photos/100/100" alt="debater-image">
                   <div class="more-stories-item">
                      <a href="#" class="link-deco">
-                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <h5 class="secondary-nav-link">Lorem ipsum dolor sit amet.</h5>
                      </a>
                      <small>
                         Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
                      </small>
                   </div>
                </li>
-               <li class="list-group-item opinion-item pt-1">
+               <li class="list-group-item opinion-item pt-1 d-flex align-items-center p-2">
                   <img src="https://picsum.photos/100/100" alt="debater-image">
                   <div class="more-stories-item">
                      <a href="#" class="link-deco">
-                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <h5 class="secondary-nav-link">Lorem ipsum dolor sit amet.</h5>
                      </a>
                   </div>
                </li>
@@ -772,8 +944,8 @@
       <!-- Tech and Culture -->
       <section class="tech">
          <h2 class="block-title">TECH AND CULTURE</h2>
-         <div class="row mt-lg-3">
-            <div class="features-item col-md-4">
+         <div class="row mt-lg-3  mx-md-1">
+            <div class="features-item col-sm-12 col-md-6  col-lg-4">
                <div class="story-item">
                   <a href="#">
                      <div class="story-header">
@@ -782,12 +954,13 @@
                   </a>
                </div>
 
-               <div class="feature-summary pt-1"><a class="article-link" href="#">Lorem ipsum dolor sit amet consectetur
+               <div class="feature-summary pt-1"><a class="article-link text-dark" href="#">Lorem ipsum dolor sit amet
+                     consectetur
                      adipisicing elit. Libero ut quia
                      enim!</a></div>
             </div>
 
-            <div class="features-item col-md-4">
+            <div class="features-item col-sm-12 col-md-6 col-lg-4">
                <div class="story-item">
                   <div class="story-header">
                      <a href="#"><img src="https://picsum.photos/200/100" class="article-image"
@@ -795,39 +968,40 @@
                   </div>
                </div>
 
-               <div class="feature-summary pt-1"><a class="article-link" href="#">Lorem ipsum dolor sit amet consectetur
+               <div class="feature-summary pt-1"><a class="article-link text-dark" href="#">Lorem ipsum dolor sit amet
+                     consectetur
                      adipisicing elit. Libero ut quia
                      enim!</a></div>
             </div>
 
-            <ul class="opinion-items col-md-4 px-0 list-group list-group-flush py-sm-3 py-lg-0">
-               <li class="list-group-item opinion-item pt-1">
+            <ul class="opinion-items col-md-12 pl-md-2 col-lg-4 px-0 list-group list-group-flush py-lg-0">
+               <li class="list-group-item opinion-item pt-1 d-flex align-items-center p-2 borderless pt-md-0">
                   <a href="#"><img src="https://picsum.photos/100/100" alt="debater-image" /></a>
                   <div class="more-stories-item">
                      <a href="#" class="link-deco">
-                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <h5 class="secondary-nav-link">Lorem ipsum dolor sit amet.</h5>
                      </a>
                      <small>
                         Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
                      </small>
                   </div>
                </li>
-               <li class="list-group-item opinion-item pt-1">
+               <li class="list-group-item opinion-item pt-1 d-flex align-items-center p-2">
                   <a href="#"><img src="https://picsum.photos/100/100" alt="debater-image"></a>
                   <div class="more-stories-item">
                      <a href="#" class="link-deco">
-                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <h5 class="secondary-nav-link">Lorem ipsum dolor sit amet.</h5>
                      </a>
                      <small>
                         Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
                      </small>
                   </div>
                </li>
-               <li class="list-group-item opinion-item pt-1">
+               <li class="list-group-item opinion-item pt-1 d-flex align-items-center p-2">
                   <a href="#"><img src="https://picsum.photos/100/100" alt="debater-image"></a>
                   <div class="more-stories-item">
                      <a href="#" class="link-deco">
-                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <h5 class="secondary-nav-link">Lorem ipsum dolor sit amet.</h5>
                      </a>
                      <small>
                         Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
@@ -842,8 +1016,8 @@
       <!-- Sports -->
       <section class="sports">
          <h2 class="block-title">SPORTS</h2>
-         <div class="row mt-lg-3">
-            <div class="features-item col-md-4">
+         <div class="row mt-lg-3 mx-md-1">
+            <div class="features-item col-sm-12 col-md-6 col-lg-4">
                <div class="story-item">
                   <div class="story-header">
                      <a href="#"><img src="https://picsum.photos/200/100" class="article-image"
@@ -851,12 +1025,13 @@
                   </div>
                </div>
 
-               <div class="feature-summary pt-1"><a class="article-link" href="#">Lorem ipsum dolor sit amet consectetur
+               <div class="feature-summary pt-1"><a class="article-link text-dark" href="#">Lorem ipsum dolor sit amet
+                     consectetur
                      adipisicing elit. Libero ut quia
                      enim!</a></div>
             </div>
 
-            <div class="features-item col-md-4">
+            <div class="features-item col-sm-12 col-md-6  col-lg-4">
                <div class="story-item">
                   <div class="story-header">
                      <a href="#"><img src="https://picsum.photos/200/100" class="article-image"
@@ -864,35 +1039,36 @@
                   </div>
                </div>
 
-               <div class="feature-summary pt-1"><a class="article-link" href="#">Lorem ipsum dolor sit amet consectetur
+               <div class="feature-summary pt-1"><a class="article-link text-dark" href="#">Lorem ipsum dolor sit amet
+                     consectetur
                      adipisicing elit. Libero ut quia
                      enim!</a></div>
             </div>
-            <ul class="opinion-items col-md-4 px-0 list-group list-group-flush py-sm-3 py-lg-0">
-               <li class="list-group-item opinion-item pt-1">
+            <ul class="opinion-items col-md-12 pl-md-2 col-lg-4 px-0 list-group list-group-flush py-lg-0">
+               <li class="list-group-item opinion-item pt-1 d-flex align-items-center p-2 borderless pt-md-0">
                   <a href="#"><img src="https://picsum.photos/100/100" alt="debater-image"></a>
                   <div class="more-stories-item">
                      <a href="#" class="link-deco">
-                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <h5 class="secondary-nav-link">Lorem ipsum dolor sit amet.</h5>
                      </a>
                      <small>
                         Israeli Sovereignty, Not Appeasement, Is the Key to Lasting Peace
                      </small>
                   </div>
                </li>
-               <li class="list-group-item opinion-item pt-1">
+               <li class="list-group-item opinion-item pt-1 d-flex align-items-center p-2">
                   <a href="#"><img src="https://picsum.photos/100/100" alt="debater-image"></a>
                   <div class="more-stories-item">
                      <a href="#" class="link-deco">
-                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <h5 class="secondary-nav-link">Lorem ipsum dolor sit amet.</h5>
                      </a>
                   </div>
                </li>
-               <li class="list-group-item opinion-item pt-1">
+               <li class="list-group-item opinion-item pt-1 d-flex align-items-center p-2">
                   <a href="#"><img src="https://picsum.photos/100/100" alt="debater-image"></a>
                   <div class="more-stories-item">
                      <a href="#" class="link-deco">
-                        <h5>Lorem ipsum dolor sit amet.</h5>
+                        <h5 class="secondary-nav-link">Lorem ipsum dolor sit amet.</h5>
                      </a>
                   </div>
                </li>
@@ -901,94 +1077,131 @@
       </section>
       <!-- End Sports -->
       <section class="subscribe-and-newsletter">
-         <div class="row">
-            <!-- Subscribe -->
+         <div class="d-flex align-items-end">
 
-            <div class="col-md-12 col-lg-8">
-               <div class="subscribe">
-                  <h3 class="subscribe-title pt-3 pl-3">SUBSCRIBE</h3>
-                  <div class="subs-wrapper">
-                     <div class="magazine-images">
-                        <div class="previous-edition">
-                           <a href="#"> <img src="https://picsum.photos/120/120" class="article-image"
-                                 alt="featured-story" /></a>
+            <div class="row">
+               <!-- Subscribe -->
+
+               <div class="col-md-12 col-lg-8">
+                  <div class="subscribe">
+                     <h3 class="subscribe-title pt-3 pl-3">SUBSCRIBE</h3>
+                     <div class="row d-md-flex align-items-stretch">
+                        <div class="card-header d-md-flex pb-5 mx-3 subs-wrapper col-md-10 mx-md-auto">
+                           <div class="magazine-images position-relative text-center col-md-4">
+                              <div class="previous-edition">
+                                 <a href="#"> <img src="https://picsum.photos/100/100" class="article-image"
+                                       alt="featured-story" /></a>
+                              </div>
+                              <div class="current-edition">
+                                 <a href="#"><img src="https://picsum.photos/100/100" class="article-image"
+                                       alt="featured-story" /></a>
+                              </div>
+                           </div>
+                           <div
+                              class="magazine-info ml-md-5 d-flex flex-column position-relative font-weight-bold  col-md-8">
+                              <p class="pt-3"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis
+                                 maxime
+                                 iusto hic,
+                                 nihil
+                              </p>
+                              <p class="pt-3"> incidunt laborum facere tempora nemo possimus amet distinctio nam eius
+                                 obcaecati consequatur
+                                 provident error reprehenderit magnam.
+                              </p>
+                              <button type="button" class="btn btn-red btn-subs text-white">SUBSCRIBE</button>
+                           </div>
                         </div>
-                        <div class="current-edition">
-                           <a href="#"><img src="https://picsum.photos/120/120" class="article-image"
-                                 alt="featured-story" /></a>
-                        </div>
-                     </div>
-                     <div class="magazine-info">
-                        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam nobis maxime iusto hic,
-                           nihil
-                        </p>
-                        <p> incidunt laborum facere tempora nemo possimus amet distinctio nam eius obcaecati consequatur
-                           provident error reprehenderit magnam.
-                        </p>
-                        <button type="button" class="btn btn-danger btn-lg btn-block">FREE SIGN UP ></button>
                      </div>
                   </div>
                </div>
-            </div>
-            <!-- End Subscribe -->
+               <!-- End Subscribe -->
+               <!-- Newsletter -->
+               <div class="newsletter col-md-12 col-lg-4 pl-lg-0 flex-md">
+                  <h3 class="subscribe-title pt-3 pl-3">NEWSLETTER</h3>
 
-            <!-- Newsletter -->
-            <div class="newsletter col-md-12 col-lg-4 flex-md fd-c">
-               <h3 class="subscribe-title pt-3 pl-3">NEWSLETTER</h3>
 
-               <div class="card subs-wrapper">
-                  <div class="card-body">
-                     <h5 class="card-title">The Starting 5</h5>
-                     <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                     <div class="form-group">
-                        <input type="email" class="form-control" placeholder="Enter email">
+                  <div class="card news-wrapper pb-2 col-md-12 mx-lg-0 mx-md-auto">
+                     <div class="row no-gutters">
+                        <div class="col-auto">
+                           <img src="https://picsum.photos/100/300" class="newsletter-thumb img-fluid" alt="">
+                        </div>
+                        <div class="col">
+                           <div class="card-block px-2">
+                              <h4 class="card-title">Lorem, ipsum.</h4>
+                              <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam,
+                                 alias.</p>
+                              <div class="form-group">
+                                 <input type="email" class="form-control" placeholder="Enter email">
+                              </div>
+                              <button type="button" class="btn btn-red text-white btn-block">FREE SIGN UP ></button>
+                           </div>
+                        </div>
                      </div>
-                     <button type="button" class="btn btn-danger btn-lg btn-block">FREE SIGN UP ></button>
                   </div>
+
+
                </div>
+               <!-- Newsletter -->
+
             </div>
-            <!-- Newsletter -->
+
          </div>
       </section>
       <!-- Footer -->
       <footer>
          <div class="footer-header px-3 py-2 text-dark align-baseline">
-            <div class="row d-flex align-items-lg-baseline">
-               <a href="#"><img src="./assets/img/news-logo-footer.svg" class="footer-image" alt="Footer Image"></a>
-               <p class="copyright">&copy; 2020 Newsweek</p>
-               <ul class="d-flex justify-content-around list-unstyled w-50 ml-md-auto">
-                  <li><a class="" href="#"><i class="fab fa-facebook-square"></i></a></li>
-                  <li><a class="" href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a class="" href="#"><i class="fab fa-instagram"></i></a></li>
-                  <li><a class="" href="#"><i class="fab fa-tumblr-square"></i></a></li>
-                  <li><a class="" href="#"><i class="fab fa-linkedin-in"></i></a></li>
-               </ul>
+            <div class="row px-lg-0 d-flex ">
+               <!-- <div class="d-md-flex d-sm-block justify-content-start align-items-md-end col-lg-9 px-0 col-md-8 col-sm-8">
+                  <a href="#" class="col-lg-4 pr-lg-0 col-md-5 px-0 w-100 col-sm-8"><img src="./assets/img/news-logo-footer.svg" class="footer-image justify-content-sm-start mb-0 mr-lg-0" alt="Footer Image"></a>
+                  <div class="col-md-4 d-flex align-items-end ml-md-3 col-lg-8 col-sm-12 pl-0">
+                     <h6 class="copyright mb-0">© 2020 Newsweek</h6>
+                  </div>
+               </div> -->
+               <div class="d-flex flex-column pl-0 col-lg-6 col-md-6 flex-md-row align-items-md-end align-items-start">
+                  <div class="logo mr-2">
+                      <img src="./assets/img/news-logo-footer.svg" class="footer-image m-0" alt="Footer Image">
+                  </div>
+                  <div class="copyright mt-3 mt-md-0">@ 2020 newsweek</div>
+              </div>
+               <div class="col-md-4 d-flex align-items-end col-lg-6 col-md-6 px-0 pr-lg-0">
+                  <ul class="d-flex list-unstyled mb-0 ml-md-auto justify-content-lg-end ">
+                     <li><a class="px-1" href="#"><i class="fab fa-facebook-square" aria-hidden="true"></i></a></li>
+                     <li><a class="px-1" href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                     <li><a class="px-1" href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                     <li><a class="px-1" href="#"><i class="fab fa-tumblr-square" aria-hidden="true"></i></a></li>
+                     <li><a class="px-1" href="#"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a></li>
+                  </ul>
+               </div>
             </div>
          </div>
-         <span class="footer-links">
-            <span class="footer-middle-header font-weight-bold">Editions: </span>
-            <a href="#">U.S. Edition</a> |
-            <a href="#">日本</a> |
-            <a href="#">Pakistan</a> |
-            <a href="#">Polska</a> |
-            <a href="#">România</a>
-         </span>
-         <span class="footer-links">
-            <a href="#">About Us</a> |
-            <a href="#">Corrections</a> |
-            <a href="#">Contact Us</a> |
-            <a href="#">Editorial Guidelines</a> |
-            <a href="#">Advertise</a> |
-            <a href="#">Copyright</a> |
-            <a href="#">Terms &amp; Conditions</a> |
-            <a href="#">Privacy Policy</a> |
-            <a href="#">Cookie Policy</a> |
-            <a href="#">Terms of Sale</a> |
-            <a href="#">Archive</a> |
-            <a href="#">Announcement</a> |
-            <a href="#">Consent preferences</a>
-         </span>
 
+         <div class="col-md-12 px-0">
+            <span class="footer-links">
+               <span class="footer-middle-header font-weight-bold">Editions: </span>
+               <a href="#">U.S. Edition</a> |
+               <a href="#">日本</a> |
+               <a href="#">Pakistan</a> |
+               <a href="#">Polska</a> |
+               <a href="#">România</a>
+            </span>
+         </div>
+         <div class="col-md-12 px-0">
+            <span class="footer-links">
+               <a href="#">About Us</a> |
+               <a href="#">Corrections</a> |
+               <a href="#">Contact Us</a> |
+               <a href="#">Editorial Guidelines</a> |
+               <a href="#">Advertise</a> |
+               <a href="#">Copyright</a> |
+               <a href="#">Terms &amp; Conditions</a> |
+               <a href="#">Privacy Policy</a> |
+               <a href="#">Cookie Policy</a> |
+               <a href="#">Terms of Sale</a> |
+               <a href="#">Archive</a> |
+               <a href="#">Announcement</a> |
+               <a href="#">Consent preferences</a>
+            </span>
+         </div>
       </footer>
    </div>
    <script src="https://kit.fontawesome.com/edadb77036.js" crossorigin="anonymous"></script>
