@@ -5,7 +5,7 @@ body {
 
 :root {
   --main-page-color: #f72210;
-  --black: #000000;
+  --black: #000;
 }
 
 /* NAVIGATION */
@@ -26,13 +26,13 @@ body {
   height: 24px;
 }
 
-.secondary-nav-link:hover{
-  color: var(--main-page-color);
+/* Added to circumvent the reboot.css text-dark property */
+.secondary-nav-link {
+  color: var(--black);
 }
 
-/* Added to circumvent the reboot.css text-dark property */
-.secondary-nav-link{
-  color: var(--black);
+.secondary-nav-link:hover {
+  color: var(--main-page-color);
 }
 
 .nav-top {
@@ -46,15 +46,14 @@ body {
 }
 
 .nav-item a {
-  font-size: 12px;
-  line-height: 20px;
+  font-size: 16px;
+  line-height: 15px;
   font-family: "Roboto Condensed", sans-serif;
 }
 
 .sub-button {
   color: var(--main-page-color);
 }
-
 
 .article-link:hover {
   color: #000;
@@ -105,23 +104,18 @@ article {
   margin-right: 10px;
 }
 
-.newsletter-image{
+.newsletter-image {
   height: 235px;
   width: 85px;
 }
 
-.subs-wrapper {
-  background-color: #f4f5f6;
-  overflow: hidden;
-}
-
-.news-wrapper{
-  background-color: #ffffff;
+.news-wrapper {
+  background-color: #fff;
   overflow: hidden;
   max-height: 280px;
 }
 
-.newsletter-thumb{
+.newsletter-thumb {
   display: none;
 }
 
@@ -189,6 +183,7 @@ article {
 
 .subs-wrapper {
   background-color: #f4f5f6;
+  overflow: hidden;
 }
 
 .hr-grey {
@@ -290,7 +285,7 @@ li.borderless { border-top: 0 none; }
     margin-right: 0;
   }
 
-  .news-wrapper{
+  .news-wrapper {
     overflow: hidden;
     min-height: 270px;
     max-height: 270px;
@@ -311,16 +306,17 @@ li.borderless { border-top: 0 none; }
     top: 15px;
     left: 90px;
   }
-  .newsletter-thumb{
+
+  .newsletter-thumb {
     display: none;
   }
 }
 
 @media screen and (min-width: 992px) {
-
   .nav-button {
     font-size: 17px;
   }
+
   .navbar-brand img {
     height: 60px;
   }
@@ -335,12 +331,13 @@ li.borderless { border-top: 0 none; }
     left: 80px;
   }
 
-  .news-wrapper{
-    background-color: #ffffff;
+  .news-wrapper {
+    background-color: #fff;
     overflow: hidden;
     min-height: 250px;
     max-height: 250px;
   }
+
   .subs-wrapper {
     background-color: #f4f5f6;
     overflow: hidden;
@@ -356,11 +353,12 @@ li.borderless { border-top: 0 none; }
   .main-view::-webkit-scrollbar {
     display: none;
   }
-  .newsletter-thumb{
+
+  .newsletter-thumb {
     display: block;
   }
 
-  .btn-subs{
+  .btn-subs {
     width: 50%;
   }
 }
