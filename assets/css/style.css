@@ -354,7 +354,7 @@ li.borderless { border-top: 0 none; }
     max-height: 250px;
   }
 
-  .main-view {
+  /* .main-view {
     max-height: 1300px;
     overflow: scroll;
     -ms-overflow-style: none;
@@ -362,7 +362,7 @@ li.borderless { border-top: 0 none; }
 
   .main-view::-webkit-scrollbar {
     display: none;
-  }
+  } */
 
   .newsletter-thumb {
     display: block;
