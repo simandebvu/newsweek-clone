@@ -95,6 +95,12 @@ article {
   text-transform: uppercase;
 }
 
+.opinion-item{
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-top: 1px solid #ddd;
+}
+
 .icon-n {
   width: 29px;
   height: 28px;
