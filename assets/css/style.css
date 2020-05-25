@@ -22,6 +22,9 @@ body {
   font-size: 14px;
 }
 
+.weather-icon {
+  height: 24px;
+}
 
 .secondary-nav-link:hover{
   color: var(--main-page-color);
