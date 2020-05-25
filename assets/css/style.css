@@ -39,7 +39,7 @@ body {
   border-left: 29px solid transparent;
   position: absolute;
   top: 0;
-  right: 0;
+  right: 1px;
 }
 
 .nav-item a {
@@ -238,6 +238,8 @@ article {
   margin-right: 7px;
 }
 
+li.borderless { border-top: 0 none; }
+
 .cat {
   color: var(--main-page-color);
 }
@@ -307,7 +309,7 @@ article {
     left: 90px;
   }
   .newsletter-thumb{
-    display: block;
+    display: none;
   }
 }
 
@@ -343,7 +345,7 @@ article {
   }
 
   .main-view {
-    max-height: 1000px;
+    max-height: 1300px;
     overflow: scroll;
     -ms-overflow-style: none;
   }
