@@ -55,6 +55,11 @@ body {
   color: var(--main-page-color);
 }
 
+.article-link{
+  font-size: 24px;
+  line-height: 24px;
+}
+
 .article-link:hover {
   color: #000;
   text-decoration: underline;
@@ -353,16 +358,6 @@ li.borderless { border-top: 0 none; }
     overflow: hidden;
     max-height: 250px;
   }
-
-  /* .main-view {
-    max-height: 1300px;
-    overflow: scroll;
-    -ms-overflow-style: none;
-  }
-
-  .main-view::-webkit-scrollbar {
-    display: none;
-  } */
 
   .newsletter-thumb {
     display: block;
