@@ -286,7 +286,6 @@ li.borderless { border-top: 0 none; }
 }
 
 @media (min-width: 768px) {
-
   .news-wrapper {
     overflow: hidden;
     min-height: 270px;
@@ -315,9 +314,6 @@ li.borderless { border-top: 0 none; }
 }
 
 @media screen and (min-width: 992px) {
-  .nav-button {
-    font-size: 17px;
-  }
 
   .navbar-brand img {
     height: 60px;
