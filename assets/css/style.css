@@ -12,7 +12,9 @@ body {
   max-width: 1140px;
   margin: 0 auto;
 }
+
 /* NAVIGATION */
+
 .btn-red,
 .navbar {
   background-color: var(--main-page-color);
