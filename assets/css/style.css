@@ -92,23 +92,7 @@ article {
   padding: 10px 0;
 }
 
-.item-separator-large {
-  background-color: #f4f5f7;
-  height: 19px;
-  width: 100%;
-}
-
-.mid-page-link {
-  text-align: center;
-  color: #000;
-  font-weight: bold;
-  padding: 10px 0;
-  text-transform: uppercase;
-}
-
 .opinion-item {
-  padding-top: 14px;
-  padding-bottom: 14px;
   border-top: 1px solid #ddd;
 }
 
@@ -302,14 +286,6 @@ li.borderless { border-top: 0 none; }
 }
 
 @media (min-width: 768px) {
-  .custom-navbar-button {
-    margin-right: 0;
-  }
-
-  /* .article-image{
-    width: 100px;
-    height: 100px;
-  } */
 
   .news-wrapper {
     overflow: hidden;
